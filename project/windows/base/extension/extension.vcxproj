@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{E4AD719A-FFEE-49C2-B57F-4463BED2A387}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>extension</RootNamespace>
+    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)../../../../phoenix_framework/windows/$(Configuration)/$(Platform)/</OutDir>
+    <IntDir>$(ProjectDir)../../tmp/$(Configuration)/$(Platform)/$(ProjectName)/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)../../../../phoenix_framework/windows/$(Configuration)/$(Platform)/</OutDir>
+    <IntDir>$(ProjectDir)../../tmp/$(Configuration)/$(Platform)/$(ProjectName)/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)../../../../phoenix_framework/windows/$(Configuration)/$(Platform)/</OutDir>
+    <IntDir>$(ProjectDir)../../tmp/$(Configuration)/$(Platform)/$(ProjectName)/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)../../../../phoenix_framework/windows/$(Configuration)/$(Platform)/</OutDir>
+    <IntDir>$(ProjectDir)../../tmp/$(Configuration)/$(Platform)/$(ProjectName)/</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;NOMINMAX;WITH_ENCRYPT;COMPONENT_BUILD;BASE_IMPLEMENTATION;EXTENSION_IMPLEMENTATION;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../../../phoenix/;$(ProjectDir)../../../../phoenix/build/;$(ProjectDir)../../../../phoenix/base/;$(ProjectDir)../../../../phoenix/base/google_base/;$(ProjectDir)../../../../third_party/;$(ProjectDir)../../../../third_party/googletest/src/googletest/include/;$(ProjectDir)../../../../third_party/win_dev_id/include/</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions>/utf-8  /Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib;msvcrt.lib</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;NOMINMAX;WITH_ENCRYPT;COMPONENT_BUILD;BASE_IMPLEMENTATION;EXTENSION_IMPLEMENTATION;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../../../phoenix/;$(ProjectDir)../../../../phoenix/build/;$(ProjectDir)../../../../phoenix/base/;$(ProjectDir)../../../../phoenix/base/google_base/;$(ProjectDir)../../../../third_party/;$(ProjectDir)../../../../third_party/googletest/src/googletest/include/;$(ProjectDir)../../../../third_party/win_dev_id/include/</AdditionalIncludeDirectories>
+      <SupportJustMyCode>false</SupportJustMyCode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <DisableSpecificWarnings>4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4702;4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>/utf-8  /Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;msvcrt.lib</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;NOMINMAX;WITH_ENCRYPT;COMPONENT_BUILD;BASE_IMPLEMENTATION;EXTENSION_IMPLEMENTATION;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../../../phoenix/;$(ProjectDir)../../../../phoenix/build/;$(ProjectDir)../../../../phoenix/base/;$(ProjectDir)../../../../phoenix/base/google_base/;$(ProjectDir)../../../../third_party/;$(ProjectDir)../../../../third_party/googletest/src/googletest/include/;$(ProjectDir)../../../../third_party/win_dev_id/include/</AdditionalIncludeDirectories>
+      <SupportJustMyCode>false</SupportJustMyCode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <DisableSpecificWarnings>4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4702;4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalOptions>/utf-8  /Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;NOMINMAX;WITH_ENCRYPT;COMPONENT_BUILD;BASE_IMPLEMENTATION;EXTENSION_IMPLEMENTATION;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../../../phoenix/;$(ProjectDir)../../../../phoenix/build/;$(ProjectDir)../../../../phoenix/base/;$(ProjectDir)../../../../phoenix/base/google_base/;$(ProjectDir)../../../../third_party/;$(ProjectDir)../../../../third_party/googletest/src/googletest/include/;$(ProjectDir)../../../../third_party/win_dev_id/include/</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions>/utf-8  /Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;msvcrt.lib</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\at_exit_manager.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\callback\bind_extension.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\callback\callback.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\callback\post_task.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\config\build_config.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\device\platform_device.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\device\platform_device_internal.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\encrypt\url_encode.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\extension_export.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\file_util\path_util_win.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\file_util\utf8_file_util.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\macros.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\memory\blockbuffer.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\memory\file_deleter.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\memory\packet.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\memory\singleton.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\notification_center\notification_center.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\notification_center\notification_source.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\nexeption\error.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\object\neobject.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\strings\string_number_conversions.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\strings\string_util.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\strings\unicode.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\synchronization\lock.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\thread\framework_thread.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\thread\thread_id.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\thread\thread_manager.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\timer\timer.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\time\time.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\tools\tool.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\file_util\path_util.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\wrappers.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\at_exit_manager.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\callback\post_task.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\device\platform_device.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\device\platform_device_win.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\encrypt\url_encode.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\file_util\path_util.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\file_util\path_util_win.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\file_util\utf8_file_util.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\notification_center\notification_center.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\notification_center\notification_source.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\strings\string_number_conversions.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\strings\string_util.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\thread\framework_thread.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\thread\thread_manager.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\timer\timer.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\tools\tool.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\google_base\google_base.vcxproj">
+      <Project>{eb38c219-a17c-45ec-b2d5-0186716dbeb0}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

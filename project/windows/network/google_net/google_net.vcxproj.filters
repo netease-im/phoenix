@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\base\address_family.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\base\address_list.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\dns\dns_config_service.cc">
+      <Filter>dns</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\dns\dns_config_service_win.cc">
+      <Filter>dns</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\dns\dns_hosts.cc">
+      <Filter>dns</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\base\escape.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\base\io_buffer.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\base\ip_pattern.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\base\ip_address.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\base\ip_address_number.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\base\ip_endpoint.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\base\net_errors.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\base\net_util.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\base\network_change_notifier.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\base\network_change_notifier_win.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\base\network_interfaces.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\base\network_interfaces_win.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\url\url_canon.cc">
+      <Filter>url</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\url\url_canon_etc.cc">
+      <Filter>url</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\url\url_canon_filesystemurl.cc">
+      <Filter>url</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\url\url_canon_fileurl.cc">
+      <Filter>url</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\url\url_canon_host.cc">
+      <Filter>url</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\url\url_canon_internal.cc">
+      <Filter>url</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\url\url_canon_ip.cc">
+      <Filter>url</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\url\url_canon_mailtourl.cc">
+      <Filter>url</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\url\url_canon_path.cc">
+      <Filter>url</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\url\url_canon_pathurl.cc">
+      <Filter>url</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\url\url_canon_query.cc">
+      <Filter>url</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\url\url_canon_relative.cc">
+      <Filter>url</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\url\url_canon_stdstring.cc">
+      <Filter>url</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\url\url_canon_stdurl.cc">
+      <Filter>url</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\url\url_constants.cc">
+      <Filter>url</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\url\url_parse.cc">
+      <Filter>url</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\url\url_parse_file.cc">
+      <Filter>url</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\url\url_util.cc">
+      <Filter>url</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\base\win\winsock_init.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\base\win\winsock_util.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\socket\socket_wrapper.cpp">
+      <Filter>socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\socket\tcp_client_socket.cpp">
+      <Filter>socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\dns\serial_worker.cc">
+      <Filter>dns</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\phoenix\phoenix_api.cpp">
+      <Filter>phoenix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\nim_network_change_observer.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\network\google_net\net\nim_net_util.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\net_export.h" />
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\base\address_family.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\base\address_list.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\dns\dns_hosts.h">
+      <Filter>dns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\dns\dns_config.h">
+      <Filter>dns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\dns\dns_config_service.h">
+      <Filter>dns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\dns\dns_config_service_win.h">
+      <Filter>dns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\base\escape.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\base\io_buffer.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\base\ip_address.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\base\ip_address_number.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\base\ip_endpoint.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\base\net_errors.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\base\net_error_list.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\base\net_util.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\base\network_interfaces_win.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\base\network_change_notifier.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\base\network_change_notifier_factory.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\base\network_change_notifier_win.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\base\network_interfaces.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\base\sys_addrinfo.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\url\url_constants.h">
+      <Filter>url</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\url\url_canon.h">
+      <Filter>url</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\url\url_canon_internal.h">
+      <Filter>url</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\url\url_canon_ip.h">
+      <Filter>url</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\url\url_canon_stdstring.h">
+      <Filter>url</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\url\url_util_internal.h">
+      <Filter>url</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\url\url_parse.h">
+      <Filter>url</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\url\url_parse_internal.h">
+      <Filter>url</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\base\win\winsock_init.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\base\win\winsock_util.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\socket\socket_wrapper.h">
+      <Filter>socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\socket\tcp_client_socket.h">
+      <Filter>socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\socket\socket_handler.h">
+      <Filter>socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\dns\serial_worker.h">
+      <Filter>dns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\phoenix\phoenix_api.h">
+      <Filter>phoenix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\phoenix\phoenix_def.h">
+      <Filter>phoenix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\nim_network_change_observer.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\nim_net_util.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\config\build_config.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\network\google_net\net\dns\dns_protocol.h">
+      <Filter>dns</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="base">
+      <UniqueIdentifier>{a084b7c5-e6ad-4eaa-aa5f-67534a74c171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="url">
+      <UniqueIdentifier>{02cb3be0-f505-42f8-b2b6-416bd04f84ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dns">
+      <UniqueIdentifier>{82f8bf6e-2151-4eb1-a43b-4ca124dcd98c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="socket">
+      <UniqueIdentifier>{3b7444fc-157f-4790-9a77-df9b2cf3f120}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="phoenix">
+      <UniqueIdentifier>{c4f57172-5f22-4c36-92a9-8d5179d65942}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{eb3f28bb-1d9b-42fe-bb99-9044062eb1c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{644a12b0-8085-421e-9885-d5bdf6438bfa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

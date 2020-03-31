@@ -1,0 +1,4 @@
+﻿C:\Program File\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: 面向 Windows XP 的支持已被弃用，将来的 Visual Studio 版本不再提供该支持。请访问 https://go.microsoft.com/fwlink/?linkid=2023588，获取详细信息。
+C:\Program File\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: 中间目录(Debug\)包含从另一个项目(nim_crypto.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  encrypt_impl.cpp
+  nim_crypto.vcxproj -> C:\work\open\new_nim_sdk\src\Debug\nim_encrypt.lib

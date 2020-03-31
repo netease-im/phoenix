@@ -1,0 +1,781 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{EB38C219-A17C-45EC-B2D5-0186716DBEB0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>base</RootNamespace>
+    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
+    <ProjectName>google_base</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)../../../../phoenix_framework/windows/$(Configuration)/$(Platform)/</OutDir>
+    <IntDir>$(ProjectDir)../../tmp/$(Configuration)/$(Platform)/$(ProjectName)/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)../../../../phoenix_framework/windows/$(Configuration)/$(Platform)/</OutDir>
+    <IntDir>$(ProjectDir)../../tmp/$(Configuration)/$(Platform)/$(ProjectName)/</IntDir>
+    <IncludePath>$(LLVMInstallDir)\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)../../../../phoenix_framework/windows/$(Configuration)/$(Platform)/</OutDir>
+    <IntDir>$(ProjectDir)../../tmp/$(Configuration)/$(Platform)/$(ProjectName)/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)../../../../phoenix_framework/windows/$(Configuration)/$(Platform)/</OutDir>
+    <IntDir>$(ProjectDir)../../tmp/$(Configuration)/$(Platform)/$(ProjectName)/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Label="LLVM" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClangClAdditionalOptions>/std:c++1z</ClangClAdditionalOptions>
+    <LldLinkAdditionalOptions>
+    </LldLinkAdditionalOptions>
+  </PropertyGroup>
+  <PropertyGroup Label="LLVM" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClangClAdditionalOptions>/std:c++1z</ClangClAdditionalOptions>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_LIB;DEBUG;_HAS_NODISCARD;_HAS_EXCEPTIONS=0;COMPONENT_BUILD;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=1;_SECURE_ATL;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;BASE_IMPLEMENTATION;DBGHELP_TRANSLATE_TCHAR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../../../phoenix/;$(ProjectDir)../../../../phoenix/build/;$(ProjectDir)../../../../phoenix/base/;$(ProjectDir)../../../../phoenix/base/google_base/</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/Zc:strictStrings- /Zc:inline /Zc:threadSafeInit- /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <RemoveUnreferencedCodeData>false</RemoveUnreferencedCodeData>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>DbgHelp.lib;Ws2_32.lib;Version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;msvcrt.lib</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;BASE_IMPLEMENTATION;_WINDOWS;_CRT_SECURE_NO_WARNINGS;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../../../phoenix/;$(ProjectDir)../../../../phoenix/build/;$(ProjectDir)../../../../phoenix/base/;$(ProjectDir)../../../../phoenix/base/google_base/</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/Zc:strictStrings- /Zc:inline /Zc:threadSafeInit- /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RemoveUnreferencedCodeData>false</RemoveUnreferencedCodeData>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>DbgHelp.lib;Mincore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_LIB;NDEBUG;_HAS_NODISCARD;_HAS_EXCEPTIONS=0;COMPONENT_BUILD;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=1;_SECURE_ATL;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;BASE_IMPLEMENTATION;DBGHELP_TRANSLATE_TCHAR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../../../phoenix/;$(ProjectDir)../../../../phoenix/build/;$(ProjectDir)../../../../phoenix/base/;$(ProjectDir)../../../../phoenix/base/google_base/</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zc:strictStrings- /Zc:inline /Zc:threadSafeInit- /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>DbgHelp.lib;Mincore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;msvcrt.lib</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_LIB;NDEBUG;_HAS_NODISCARD;_HAS_EXCEPTIONS=0;COMPONENT_BUILD;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=1;_SECURE_ATL;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;BASE_IMPLEMENTATION;DBGHELP_TRANSLATE_TCHAR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../../../phoenix/;$(ProjectDir)../../../../phoenix/build/;$(ProjectDir)../../../../phoenix/base/;$(ProjectDir)../../../../phoenix/base/google_base/</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zc:strictStrings- /Zc:inline /Zc:threadSafeInit- /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>DbgHelp.lib;Mincore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;msvcrt.lib</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\allocator\allocator_check.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\allocator\allocator_extension.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\atomicops.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\atomicops_internals_atomicword_compat.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\atomicops_internals_portable.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\atomicops_internals_x86_msvc.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\atomic_ref_count.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\atomic_sequence_num.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\at_exit.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\auto_reset.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\barrier_closure.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\base64.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\base64url.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\base_export.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\base_paths.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\base_paths_win.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\base_switches.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\big_endian.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\bind.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\bind_helpers.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\bind_internal.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\bind_internal_win.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\bits.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\bit_cast.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\build_time.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\callback.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\callback_forward.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\callback_helpers.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\callback_internal.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\callback_list.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\cancelable_callback.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\command_line.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\compiler_specific.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\containers\adapters.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\containers\hash_tables.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\containers\linked_list.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\containers\mru_cache.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\containers\scoped_ptr_hash_map.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\containers\small_map.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\containers\stack_container.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\cpu.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\critical_closure.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\debug\alias.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\debug\asan_invalid_access.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\debug\close_handle_hook_win.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\debug\crash_logging.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\debug\debugger.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\debug\dump_without_crashing.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\debug\leak_annotations.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\debug\leak_tracker.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\debug\profiler.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\debug\stack_trace.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\debug\task_annotator.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\deferred_sequenced_task_runner.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\environment.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\event_types.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\feature_list.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\dir_reader_fallback.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\file.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\file_enumerator.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\file_path.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\file_path_watcher.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\file_proxy.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\file_tracing.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\file_util.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\file_util_proxy.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\important_file_writer.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\memory_mapped_file.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\scoped_file.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\scoped_temp_dir.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\file_version_info.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\file_version_info_win.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\format_macros.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\guid.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\hash.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\id_map.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\json\json_file_value_serializer.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\json\json_parser.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\json\json_reader.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\json\json_string_value_serializer.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\json\json_value_converter.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\json\json_writer.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\json\string_escape.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\lazy_instance.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\location.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\logging.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\logging_win.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\macros.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\md5.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\aligned_memory.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\discardable_memory.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\discardable_memory_allocator.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\discardable_shared_memory.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\linked_ptr.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\manual_constructor.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\memory_pressure_listener.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\memory_pressure_monitor.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\memory_pressure_monitor_win.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\ptr_util.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\raw_scoped_refptr_mismatch_checker.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\ref_counted.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\ref_counted_delete_on_message_loop.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\ref_counted_memory.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\scoped_policy.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\scoped_ptr.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\scoped_vector.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\shared_memory.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\shared_memory_handle.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\singleton.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\weak_ptr.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\message_loop\incoming_task_queue.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\message_loop\message_loop.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\message_loop\message_loop_task_runner.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\message_loop\message_pump.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\message_loop\message_pump_default.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\message_loop\message_pump_dispatcher.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\message_loop\message_pump_win.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\message_loop\timer_slack.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\bucket_ranges.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\field_trial.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram_base.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram_delta_serialization.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram_flattener.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram_macros.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram_samples.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram_snapshot_manager.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\metrics_hashes.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\sample_map.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\sample_vector.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\sparse_histogram.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\statistics_recorder.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\user_metrics.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\user_metrics_action.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\move.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\native_library.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\numerics\safe_conversions.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\numerics\safe_conversions_impl.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\numerics\safe_math.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\numerics\safe_math_impl.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\observer_list.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\observer_list_threadsafe.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\path_service.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\pending_task.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\pickle.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\power_monitor\power_monitor.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\power_monitor\power_monitor_device_source.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\power_monitor\power_monitor_source.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\power_monitor\power_observer.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\process\kill.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\process\launch.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\process\memory.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\process\process.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\process\process_handle.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\process\process_info.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\process\process_iterator.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\process\process_metrics.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\profiler\alternate_timer.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\profiler\native_stack_sampler.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\profiler\scoped_profile.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\profiler\scoped_tracker.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\profiler\stack_sampling_profiler.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\profiler\tracked_time.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\profiler\win32_stack_frame_unwinder.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\rand_util.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\run_loop.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\scoped_clear_errno.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\scoped_generic.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\scoped_native_library.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\scoped_observer.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\sequenced_task_runner.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\sequenced_task_runner_helpers.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\sequence_checker.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\sequence_checker_impl.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\single_thread_task_runner.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\stl_util.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\latin1_string_conversions.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\nullable_string16.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\pattern.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\safe_sprintf.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\string16.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\stringize_macros.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\stringprintf.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\string_number_conversions.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\string_piece.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\string_split.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\string_tokenizer.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\string_util.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\string_util_win.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\sys_string_conversions.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\utf_offset_string_conversions.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\utf_string_conversions.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\utf_string_conversion_utils.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\supports_user_data.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\synchronization\cancellation_flag.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\synchronization\condition_variable.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\synchronization\lock.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\synchronization\lock_impl.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\synchronization\spin_wait.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\synchronization\waitable_event.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\synchronization\waitable_event_watcher.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\system_monitor\system_monitor.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\sys_byteorder.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\sys_info.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\task\cancelable_task_tracker.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\task_runner.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\task_runner_util.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\template_util.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\third_party\dmg_fp\dmg_fp.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\third_party\dynamic_annotations\dynamic_annotations.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\third_party\icu\icu_utf.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\third_party\modp_b64\modp_b64.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\third_party\modp_b64\modp_b64_data.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\third_party\nspr\prcpucfg.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\third_party\nspr\prcpucfg_win.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\third_party\nspr\prtime.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\third_party\nspr\prtypes.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\third_party\valgrind\memcheck.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\third_party\valgrind\valgrind.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\non_thread_safe.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\non_thread_safe_impl.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\platform_thread.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\post_task_and_reply_impl.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\sequenced_task_runner_handle.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\sequenced_worker_pool.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\simple_thread.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\thread.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_checker.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_checker_impl.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_collision_warner.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_id_name_manager.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_local.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_local_storage.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_restrictions.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\watchdog.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\worker_pool.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\thread_task_runner_handle.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\timer\elapsed_timer.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\timer\hi_res_timer_manager.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\timer\mock_timer.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\timer\timer.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\time\clock.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\time\default_clock.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\time\default_tick_clock.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\time\tick_clock.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\time\time.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\common\trace_event_common.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\etw_manifest\chrome_events_win.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_allocation_context.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_allocation_context_tracker.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_allocation_register.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_heap_dump_writer.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_stack_frame_deduplicator.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_type_name_deduplicator.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\malloc_dump_provider.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\memory_allocator_dump.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\memory_allocator_dump_guid.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\memory_dump_manager.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\memory_dump_provider.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\memory_dump_request_args.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\memory_dump_session_state.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\process_memory_dump.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\process_memory_maps.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\process_memory_maps_dump_provider.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\process_memory_totals.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\process_memory_totals_dump_provider.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_buffer.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_config.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_argument.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_etw_export_win.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_impl.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_memory_overhead.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_synthetic_delay.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_system_stats_monitor.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_log.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_sampling_thread.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\tracing_agent.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\winheap_dump_provider_win.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\tracked_objects.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\tracking_info.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\tuple.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\values.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\value_conversions.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\version.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\vlog.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\enum_variant.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\event_trace_consumer.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\event_trace_controller.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\event_trace_provider.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\i18n.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\iat_patch_function.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\iunknown_impl.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\message_window.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\object_watcher.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\pe_image.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\process_startup_helper.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\registry.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\resource_util.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_bstr.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_comptr.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_com_initializer.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_co_mem.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_gdi_object.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_handle.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_hdc.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_hglobal.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_process_information.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_propvariant.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_select_object.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_variant.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\startup_information.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\windows_version.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\wrapped_window_proc.h" />
+    <ClInclude Include="..\build\build_config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\allocator\allocator_check.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\allocator\allocator_extension.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\at_exit.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\barrier_closure.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\base64.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\base64url.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\base_paths.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\base_paths_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\base_switches.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\big_endian.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\bind_helpers.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\build_time.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\callback_helpers.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\callback_internal.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\check_example.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\command_line.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\cpu.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\debug\alias.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\debug\asan_invalid_access.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\debug\close_handle_hook_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\debug\crash_logging.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\debug\debugger.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\debug\debugger_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\debug\dump_without_crashing.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\debug\profiler.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\debug\stack_trace.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\debug\stack_trace_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\debug\task_annotator.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\deferred_sequenced_task_runner.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\environment.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\feature_list.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_enumerator.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_enumerator_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_path.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_path_constants.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_path_watcher.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_path_watcher_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_proxy.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_tracing.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_util.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_util_proxy.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_util_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\important_file_writer.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\memory_mapped_file.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\memory_mapped_file_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\scoped_file.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\scoped_temp_dir.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\file_version_info_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\guid.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\guid_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\hash.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\json\json_file_value_serializer.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\json\json_parser.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\json\json_reader.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\json\json_string_value_serializer.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\json\json_value_converter.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\json\json_writer.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\json\string_escape.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\lazy_instance.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\location.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\logging.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\logging_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\md5.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\aligned_memory.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\discardable_memory.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\discardable_memory_allocator.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\discardable_shared_memory.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\memory_pressure_listener.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\memory_pressure_monitor.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\memory_pressure_monitor_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\ref_counted.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\ref_counted_memory.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\shared_memory_handle_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\shared_memory_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\singleton.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\weak_ptr.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\message_loop\incoming_task_queue.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\message_loop\message_loop.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\message_loop\message_loop_task_runner.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\message_loop\message_pump.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\message_loop\message_pump_default.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\message_loop\message_pump_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\bucket_ranges.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\field_trial.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram_base.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram_delta_serialization.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram_samples.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram_snapshot_manager.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\metrics_hashes.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\sample_map.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\sample_vector.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\sparse_histogram.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\statistics_recorder.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\user_metrics.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\native_library_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\path_service.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\pending_task.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\pickle.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\power_monitor\power_monitor.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\power_monitor\power_monitor_device_source.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\power_monitor\power_monitor_device_source_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\power_monitor\power_monitor_source.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\kill.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\kill_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\launch.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\launch_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\memory.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\memory_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\process_handle.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\process_handle_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\process_info_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\process_iterator.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\process_iterator_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\process_metrics.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\process_metrics_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\process_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\profiler\alternate_timer.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\profiler\native_stack_sampler.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\profiler\native_stack_sampler_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\profiler\scoped_profile.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\profiler\scoped_tracker.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\profiler\stack_sampling_profiler.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\profiler\test_support_library.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\profiler\tracked_time.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\profiler\win32_stack_frame_unwinder.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\rand_util.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\rand_util_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\run_loop.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\scoped_native_library.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\sequenced_task_runner.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\sequence_checker_impl.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\sha1_portable.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\latin1_string_conversions.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\nullable_string16.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\pattern.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\safe_sprintf.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\stringprintf.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\string_number_conversions.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\string_piece.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\string_split.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\string_util.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\string_util_constants.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\sys_string_conversions_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\utf_offset_string_conversions.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\utf_string_conversions.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\utf_string_conversion_utils.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\supports_user_data.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\synchronization\cancellation_flag.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\synchronization\condition_variable_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\synchronization\lock.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\synchronization\lock_impl_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\synchronization\waitable_event_watcher_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\synchronization\waitable_event_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\system_monitor\system_monitor.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\sys_info.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\sys_info_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\task\cancelable_task_tracker.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\task_runner.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\third_party\dmg_fp\dtoa_wrapper.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\third_party\dmg_fp\g_fmt.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\third_party\dynamic_annotations\dynamic_annotations.c" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\third_party\icu\icu_utf.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\third_party\modp_b64\modp_b64.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\third_party\nspr\prtime.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\third_party\superfasthash\superfasthash.c" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\non_thread_safe_impl.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\platform_thread_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\post_task_and_reply_impl.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\sequenced_task_runner_handle.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\sequenced_worker_pool.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\simple_thread.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\thread.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_checker_impl.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_collision_warner.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_id_name_manager.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_local_storage.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_local_storage_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_local_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_restrictions.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\watchdog.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\worker_pool.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\worker_pool_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\thread_task_runner_handle.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\timer\elapsed_timer.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\timer\hi_res_timer_manager_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\timer\mock_timer.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\timer\timer.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\time\clock.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\time\default_clock.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\time\default_tick_clock.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\time\tick_clock.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\time\time.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\time\time_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_allocation_context.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_allocation_context_tracker.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_allocation_register.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_allocation_register_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_heap_dump_writer.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_stack_frame_deduplicator.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_type_name_deduplicator.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\malloc_dump_provider.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\memory_allocator_dump.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\memory_allocator_dump_guid.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\memory_dump_manager.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\memory_dump_request_args.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\memory_dump_session_state.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\process_memory_dump.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\process_memory_maps.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\process_memory_maps_dump_provider.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\process_memory_totals.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\process_memory_totals_dump_provider.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_buffer.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_config.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_argument.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_etw_export_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_impl.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_memory_overhead.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_synthetic_delay.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_system_stats_monitor.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_log.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_log_constants.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_sampling_thread.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\tracing_agent.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\winheap_dump_provider_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\tracked_objects.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\tracking_info.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\values.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\value_conversions.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\version.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\vlog.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\enum_variant.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\event_trace_controller.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\event_trace_provider.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\i18n.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\iat_patch_function.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\iunknown_impl.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\message_window.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\object_watcher.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\pe_image.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\process_startup_helper.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\registry.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\resource_util.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_bstr.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_handle.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_process_information.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_variant.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\startup_information.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\windows_version.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\wrapped_window_proc.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\phoenix\base\google_base\base\base.isolate" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
