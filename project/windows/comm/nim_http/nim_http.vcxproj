@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_http\http\curl_http_request.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_http\http\curl_http_request_base.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_http\http\curl_network_session.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_http\http\curl_network_session_manager_uv.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_http\http\http_manager_imp.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_http\http\message_pump_for_uv.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_http\http\url_session.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_http\http\url_session_manager.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_http\wrapper\http_multipart.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_http\wrapper\nim_http.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\config\build_config.h" />
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\http\curl_http_request.h" />
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\http\curl_http_request_base.h" />
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\http\curl_network_session.h" />
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\http\curl_network_session_manager.h" />
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\http\curl_network_session_manager_uv.h" />
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\http\http_log.h" />
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\http\http_manager_imp.h" />
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\http\message_pump_for_uv.h" />
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\http\url_session.h" />
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\http\url_session_manager.h" />
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\http_export.h" />
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\wrapper\http_def.h" />
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\wrapper\http_multipart.h" />
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\wrapper\nim_http.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\base\extension\extension.vcxproj">
+      <Project>{e4ad719a-ffee-49c2-b57f-4463bed2a387}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\base\google_base\google_base.vcxproj">
+      <Project>{eb38c219-a17c-45ec-b2d5-0186716dbeb0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\network\proxy_config\proxy_config.vcxproj">
+      <Project>{34a8315a-d8fc-4854-85f2-7f5e851281be}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{631B0B69-DDCE-4DB1-9681-6A67D89999D6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>http</RootNamespace>
+    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
+    <ProjectName>nim_http</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)../../../../phoenix_framework/windows/$(Configuration)/$(Platform)/</OutDir>
+    <IntDir>$(ProjectDir)../../tmp/$(Configuration)/$(Platform)/$(ProjectName)/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)../../../../phoenix_framework/windows/$(Configuration)/$(Platform)/</OutDir>
+    <IntDir>$(ProjectDir)../../tmp/$(Configuration)/$(Platform)/$(ProjectName)/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)../../../../phoenix_framework/windows/$(Configuration)/$(Platform)/</OutDir>
+    <IntDir>$(ProjectDir)../../tmp/$(Configuration)/$(Platform)/$(ProjectName)/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)../../../../phoenix_framework/windows/$(Configuration)/$(Platform)/</OutDir>
+    <IntDir>$(ProjectDir)../../tmp/$(Configuration)/$(Platform)/$(ProjectName)/</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions);NOMINMAX;COMPONENT_BUILD;BUILDING_LIBCURL;HTTP_IMPLEMENTATION;BASE_IMPLEMENTATION;NET_IMPLEMENTATION;EXTENSION_IMPLEMENTATION;WIN32_LEAN_AND_MEAN</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalOptions>/Zc:threadSafeInit- /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../../../;$(ProjectDir)../../../../phoenix/;$(ProjectDir)../../../../phoenix/build/;$(ProjectDir)../../../../phoenix/comm/;$(ProjectDir)../../../../phoenix/base/;$(ProjectDir)../../../../phoenix/network/;$(ProjectDir)../../../../phoenix/base/google_base/;$(ProjectDir)../../../../third_party/openssl/include/windows/;$(ProjectDir)../../../../third_party/curl/include/;$(ProjectDir)../../../../third_party/libuv/include/</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions);NOMINMAX;COMPONENT_BUILD;HTTP_IMPLEMENTATION;BASE_IMPLEMENTATION;NET_IMPLEMENTATION;EXTENSION_IMPLEMENTATION;WIN32_LEAN_AND_MEAN</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalOptions>/Zc:threadSafeInit- /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../../../;$(ProjectDir)../../../../phoenix/;$(ProjectDir)../../../../phoenix/build/;$(ProjectDir)../../../../phoenix/comm/;$(ProjectDir)../../../../phoenix/base/;$(ProjectDir)../../../../phoenix/network/;$(ProjectDir)../../../../phoenix/base/google_base/;$(ProjectDir)../../../../third_party/openssl/include/windows/;$(ProjectDir)../../../../third_party/curl/include/;$(ProjectDir)../../../../third_party/libuv/include/</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions);NOMINMAX;COMPONENT_BUILD;BUILDING_LIBCURL;HTTP_IMPLEMENTATION;BASE_IMPLEMENTATION;NET_IMPLEMENTATION;EXTENSION_IMPLEMENTATION;WIN32_LEAN_AND_MEAN</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalOptions>/Zc:threadSafeInit- /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../../../;$(ProjectDir)../../../../phoenix/;$(ProjectDir)../../../../phoenix/build/;$(ProjectDir)../../../../phoenix/comm/;$(ProjectDir)../../../../phoenix/base/;$(ProjectDir)../../../../phoenix/network/;$(ProjectDir)../../../../phoenix/base/google_base/;$(ProjectDir)../../../../third_party/openssl/include/windows/;$(ProjectDir)../../../../third_party/curl/include/;$(ProjectDir)../../../../third_party/libuv/include/</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions);NOMINMAX;COMPONENT_BUILD;HTTP_IMPLEMENTATION;BASE_IMPLEMENTATION;NET_IMPLEMENTATION;EXTENSION_IMPLEMENTATION;WIN32_LEAN_AND_MEAN</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalOptions>/Zc:threadSafeInit- /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../../../;$(ProjectDir)../../../../phoenix/;$(ProjectDir)../../../../phoenix/build/;$(ProjectDir)../../../../phoenix/comm/;$(ProjectDir)../../../../phoenix/base/;$(ProjectDir)../../../../phoenix/network/;$(ProjectDir)../../../../phoenix/base/google_base/;$(ProjectDir)../../../../third_party/openssl/include/windows/;$(ProjectDir)../../../../third_party/curl/include/;$(ProjectDir)../../../../third_party/libuv/include/</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{ddf11c1a-ef6b-4343-9b8c-88a4f8249dae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{9e9fa063-15d6-41e1-8c3e-de989ba576f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wrapper">
+      <UniqueIdentifier>{665c7b7f-0784-4eac-9a61-fb4a672790c6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_http\http\curl_http_request.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_http\http\curl_http_request_base.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_http\http\curl_network_session.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_http\http\curl_network_session_manager_uv.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_http\http\message_pump_for_uv.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_http\http\url_session.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_http\http\url_session_manager.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_http\http\http_manager_imp.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_http\wrapper\nim_http.cpp">
+      <Filter>wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_http\wrapper\http_multipart.cpp">
+      <Filter>wrapper</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\http\curl_http_request.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\http\curl_http_request_base.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\http\curl_network_session.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\http\curl_network_session_manager.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\http\curl_network_session_manager_uv.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\http\message_pump_for_uv.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\http\url_session.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\http\url_session_manager.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\config\build_config.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\http_export.h" />
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\http\http_manager_imp.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\http\http_log.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\wrapper\nim_http.h">
+      <Filter>wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\wrapper\http_multipart.h">
+      <Filter>wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_http\wrapper\http_def.h">
+      <Filter>wrapper</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

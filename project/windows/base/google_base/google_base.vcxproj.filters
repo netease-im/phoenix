@@ -1,0 +1,1552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="build">
+      <UniqueIdentifier>{989f54fc-eea5-4d11-b190-b6f50d07ddf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="memory">
+      <UniqueIdentifier>{69cce33a-3ba6-4f1d-902d-0072b8c23e88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="threading">
+      <UniqueIdentifier>{f74aca31-341d-4ac7-890d-ab6965200508}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win">
+      <UniqueIdentifier>{cc188efe-e7fa-47ee-b097-8e181eed706b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="debug">
+      <UniqueIdentifier>{266dc13b-1428-47e2-894a-c68f32434f49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="files">
+      <UniqueIdentifier>{a6d3365c-3659-4346-b4f3-a6b416e382a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{704e058d-103b-4910-a7dd-69265076906e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="synchronization">
+      <UniqueIdentifier>{21cb0e99-eba0-47dd-bb95-e2465dd4ba4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system_monitor">
+      <UniqueIdentifier>{183e8cb7-547b-4675-ad10-0f9a9741eab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party">
+      <UniqueIdentifier>{25304aa4-25aa-4064-889a-8a9ea36ae936}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\modp_b64">
+      <UniqueIdentifier>{e84ba8e7-50da-402d-970e-97e5d8c010c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\nspr">
+      <UniqueIdentifier>{cbfc40a0-a308-411e-a19c-8e5f54e0610e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\dmg_fp">
+      <UniqueIdentifier>{cffdc3fb-f716-4131-8d7a-fdc6e8ed00f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\icu">
+      <UniqueIdentifier>{371d19a7-4061-46dd-ae4f-7efe2baf138f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="message_loop">
+      <UniqueIdentifier>{c9e4d2a0-82da-40c0-930f-6d75fc181191}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="metrics">
+      <UniqueIdentifier>{08f8766e-e98c-4130-b981-a7772378f1e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="process">
+      <UniqueIdentifier>{947091bf-327a-40a7-8659-d5efef3c69c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="strings">
+      <UniqueIdentifier>{2b4b6a1a-bec3-4a49-bc2e-ef71561e0775}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="task">
+      <UniqueIdentifier>{1b1d5961-44b4-41e6-9d61-59345f3ea3ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="containers">
+      <UniqueIdentifier>{22b2dced-113c-49f6-9683-3d21bcd15bfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="time">
+      <UniqueIdentifier>{104f8c78-7819-4d94-9176-8bd1a3c5ef84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="timer">
+      <UniqueIdentifier>{477ffe0d-9569-4290-bc68-7939a2f7887f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="trace_event">
+      <UniqueIdentifier>{edc7a136-d23b-4b6f-b092-eb95ff50c64d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="trace_event\common">
+      <UniqueIdentifier>{5a88d4a4-f866-46e0-8636-7ad4fdd920a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="trace_event\etw_manifest">
+      <UniqueIdentifier>{b93cc8a4-d5f9-4c4f-8feb-32364868cb07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="numerics">
+      <UniqueIdentifier>{f3075b55-4e6f-4a8d-ab97-c0edfe3e1331}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="profiler">
+      <UniqueIdentifier>{35c6aed1-5d7c-40ca-b753-e3321d170fdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="allocator">
+      <UniqueIdentifier>{88db3419-112f-405f-801a-15c5b3864613}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\dynamic_annotations">
+      <UniqueIdentifier>{1d6a3ff7-1edc-42b9-8321-ffa9cd9969ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\valgrind">
+      <UniqueIdentifier>{94bb2028-fdd5-46a2-9124-7222c0005467}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="power_monitor">
+      <UniqueIdentifier>{6d84544a-ab68-47bb-b3c5-269480bba29c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\superfasthash">
+      <UniqueIdentifier>{5ae7a883-564f-470a-a2b6-8ad0973977fb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\json\json_file_value_serializer.cc">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\json\json_parser.cc">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\json\json_reader.cc">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\json\json_string_value_serializer.cc">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\json\json_writer.cc">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\json\string_escape.cc">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\third_party\modp_b64\modp_b64.cc">
+      <Filter>third_party\modp_b64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\third_party\nspr\prtime.cc">
+      <Filter>third_party\nspr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\third_party\dmg_fp\dtoa_wrapper.cc">
+      <Filter>third_party\dmg_fp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\third_party\dmg_fp\g_fmt.cc">
+      <Filter>third_party\dmg_fp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\third_party\icu\icu_utf.cc">
+      <Filter>third_party\icu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\at_exit.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\barrier_closure.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\base_paths.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\base_paths_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\base_switches.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\base64.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\base64url.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\big_endian.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\bind_helpers.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\build_time.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\callback_helpers.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\callback_internal.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\check_example.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\command_line.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\cpu.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\deferred_sequenced_task_runner.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\environment.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\feature_list.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\file_version_info_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\guid.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\guid_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\hash.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\lazy_instance.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\location.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\logging.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\logging_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\md5.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\native_library_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\path_service.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\pending_task.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\pickle.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\rand_util.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\rand_util_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\run_loop.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\scoped_native_library.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\sequence_checker_impl.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\sequenced_task_runner.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\supports_user_data.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\sync_socket_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\sys_info.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\sys_info_win.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\task_runner.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\thread_task_runner_handle.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\tracked_objects.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\tracking_info.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\value_conversions.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\values.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\version.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\vlog.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\enum_variant.cc">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\event_trace_controller.cc">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\event_trace_provider.cc">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\i18n.cc">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\iat_patch_function.cc">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\iunknown_impl.cc">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\message_window.cc">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\object_watcher.cc">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\pe_image.cc">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\process_startup_helper.cc">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\registry.cc">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\resource_util.cc">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_bstr.cc">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_handle.cc">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_process_information.cc">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_variant.cc">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\startup_information.cc">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\windows_version.cc">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\win\wrapped_window_proc.cc">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\non_thread_safe_impl.cc">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\platform_thread_win.cc">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\post_task_and_reply_impl.cc">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\sequenced_task_runner_handle.cc">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\sequenced_worker_pool.cc">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\simple_thread.cc">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\thread.cc">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_checker_impl.cc">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_collision_warner.cc">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_id_name_manager.cc">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_local_storage.cc">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_local_storage_win.cc">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_local_win.cc">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_restrictions.cc">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\watchdog.cc">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\worker_pool.cc">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\threading\worker_pool_win.cc">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\system_monitor\system_monitor.cc">
+      <Filter>system_monitor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\synchronization\cancellation_flag.cc">
+      <Filter>synchronization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\synchronization\condition_variable_win.cc">
+      <Filter>synchronization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\synchronization\lock.cc">
+      <Filter>synchronization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\synchronization\lock_impl_win.cc">
+      <Filter>synchronization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\synchronization\waitable_event_watcher_win.cc">
+      <Filter>synchronization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\synchronization\waitable_event_win.cc">
+      <Filter>synchronization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\aligned_memory.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\discardable_memory.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\discardable_memory_allocator.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\discardable_shared_memory.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\memory_pressure_listener.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\memory_pressure_monitor.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\memory_pressure_monitor_win.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\ref_counted.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\ref_counted_memory.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\shared_memory_handle_win.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\shared_memory_win.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\singleton.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\memory\weak_ptr.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\json\json_value_converter.cc">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file.cc">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_enumerator.cc">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_enumerator_win.cc">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_path.cc">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_path_constants.cc">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_path_watcher.cc">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_path_watcher_win.cc">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_proxy.cc">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_tracing.cc">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_util.cc">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_util_proxy.cc">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_util_win.cc">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\file_win.cc">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\important_file_writer.cc">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\memory_mapped_file.cc">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\memory_mapped_file_win.cc">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\scoped_file.cc">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\files\scoped_temp_dir.cc">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\debug\alias.cc">
+      <Filter>debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\debug\asan_invalid_access.cc">
+      <Filter>debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\debug\close_handle_hook_win.cc">
+      <Filter>debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\debug\crash_logging.cc">
+      <Filter>debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\debug\debugger.cc">
+      <Filter>debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\debug\debugger_win.cc">
+      <Filter>debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\debug\dump_without_crashing.cc">
+      <Filter>debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\debug\profiler.cc">
+      <Filter>debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\debug\stack_trace.cc">
+      <Filter>debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\debug\stack_trace_win.cc">
+      <Filter>debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\debug\task_annotator.cc">
+      <Filter>debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\message_loop\incoming_task_queue.cc">
+      <Filter>message_loop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\message_loop\message_loop.cc">
+      <Filter>message_loop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\message_loop\message_loop_task_runner.cc">
+      <Filter>message_loop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\message_loop\message_pump.cc">
+      <Filter>message_loop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\message_loop\message_pump_default.cc">
+      <Filter>message_loop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\message_loop\message_pump_win.cc">
+      <Filter>message_loop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\bucket_ranges.cc">
+      <Filter>metrics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\field_trial.cc">
+      <Filter>metrics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram.cc">
+      <Filter>metrics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram_base.cc">
+      <Filter>metrics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram_delta_serialization.cc">
+      <Filter>metrics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram_samples.cc">
+      <Filter>metrics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram_snapshot_manager.cc">
+      <Filter>metrics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\metrics_hashes.cc">
+      <Filter>metrics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\sample_map.cc">
+      <Filter>metrics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\sample_vector.cc">
+      <Filter>metrics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\sparse_histogram.cc">
+      <Filter>metrics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\statistics_recorder.cc">
+      <Filter>metrics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\metrics\user_metrics.cc">
+      <Filter>metrics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\kill.cc">
+      <Filter>process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\kill_win.cc">
+      <Filter>process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\launch.cc">
+      <Filter>process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\launch_win.cc">
+      <Filter>process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\memory.cc">
+      <Filter>process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\memory_win.cc">
+      <Filter>process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\process_handle.cc">
+      <Filter>process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\process_handle_win.cc">
+      <Filter>process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\process_info_win.cc">
+      <Filter>process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\process_iterator.cc">
+      <Filter>process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\process_iterator_win.cc">
+      <Filter>process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\process_metrics.cc">
+      <Filter>process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\process_metrics_win.cc">
+      <Filter>process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\process\process_win.cc">
+      <Filter>process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\latin1_string_conversions.cc">
+      <Filter>strings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\nullable_string16.cc">
+      <Filter>strings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\pattern.cc">
+      <Filter>strings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\safe_sprintf.cc">
+      <Filter>strings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\string_number_conversions.cc">
+      <Filter>strings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\string_piece.cc">
+      <Filter>strings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\string_split.cc">
+      <Filter>strings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\string_util.cc">
+      <Filter>strings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\string_util_constants.cc">
+      <Filter>strings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\stringprintf.cc">
+      <Filter>strings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\sys_string_conversions_win.cc">
+      <Filter>strings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\utf_offset_string_conversions.cc">
+      <Filter>strings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\utf_string_conversion_utils.cc">
+      <Filter>strings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\strings\utf_string_conversions.cc">
+      <Filter>strings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\task\cancelable_task_tracker.cc">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\time\clock.cc">
+      <Filter>time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\time\default_clock.cc">
+      <Filter>time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\time\default_tick_clock.cc">
+      <Filter>time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\time\tick_clock.cc">
+      <Filter>time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\time\time.cc">
+      <Filter>time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\time\time_win.cc">
+      <Filter>time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\timer\elapsed_timer.cc">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\timer\hi_res_timer_manager_win.cc">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\timer\mock_timer.cc">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\timer\timer.cc">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_allocation_context.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_allocation_context_tracker.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_allocation_register.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_allocation_register_win.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_heap_dump_writer.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_stack_frame_deduplicator.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_type_name_deduplicator.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\malloc_dump_provider.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\memory_allocator_dump.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\memory_allocator_dump_guid.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\memory_dump_manager.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\memory_dump_request_args.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\memory_dump_session_state.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\process_memory_dump.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\process_memory_maps.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\process_memory_maps_dump_provider.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\process_memory_totals.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\process_memory_totals_dump_provider.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_buffer.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_config.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_argument.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_etw_export_win.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_impl.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_memory_overhead.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_synthetic_delay.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_system_stats_monitor.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_log.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_log_constants.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_sampling_thread.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\tracing_agent.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\trace_event\winheap_dump_provider_win.cc">
+      <Filter>trace_event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\profiler\alternate_timer.cc">
+      <Filter>profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\profiler\native_stack_sampler.cc">
+      <Filter>profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\profiler\native_stack_sampler_win.cc">
+      <Filter>profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\profiler\scoped_profile.cc">
+      <Filter>profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\profiler\scoped_tracker.cc">
+      <Filter>profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\profiler\stack_sampling_profiler.cc">
+      <Filter>profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\profiler\test_support_library.cc">
+      <Filter>profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\profiler\tracked_time.cc">
+      <Filter>profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\profiler\win32_stack_frame_unwinder.cc">
+      <Filter>profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\allocator\allocator_check.cc">
+      <Filter>allocator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\allocator\allocator_extension.cc">
+      <Filter>allocator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\third_party\dynamic_annotations\dynamic_annotations.c">
+      <Filter>third_party\dynamic_annotations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\power_monitor\power_monitor.cc">
+      <Filter>power_monitor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\power_monitor\power_monitor_device_source.cc">
+      <Filter>power_monitor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\power_monitor\power_monitor_device_source_win.cc">
+      <Filter>power_monitor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\power_monitor\power_monitor_source.cc">
+      <Filter>power_monitor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\sha1_portable.cc" />
+    <ClCompile Include="..\..\..\..\phoenix\base\google_base\base\third_party\superfasthash\superfasthash.c">
+      <Filter>third_party\superfasthash</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\build\build_config.h">
+      <Filter>build</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\json\json_file_value_serializer.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\json\json_parser.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\json\json_reader.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\json\json_string_value_serializer.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\json\json_value_converter.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\json\json_writer.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\json\string_escape.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\third_party\modp_b64\modp_b64.h">
+      <Filter>third_party\modp_b64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\third_party\modp_b64\modp_b64_data.h">
+      <Filter>third_party\modp_b64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\third_party\nspr\prcpucfg.h">
+      <Filter>third_party\nspr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\third_party\nspr\prcpucfg_win.h">
+      <Filter>third_party\nspr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\third_party\nspr\prtime.h">
+      <Filter>third_party\nspr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\third_party\nspr\prtypes.h">
+      <Filter>third_party\nspr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\third_party\dmg_fp\dmg_fp.h">
+      <Filter>third_party\dmg_fp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\third_party\icu\icu_utf.h">
+      <Filter>third_party\icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\at_exit.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\atomic_ref_count.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\atomic_sequence_num.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\atomicops.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\atomicops_internals_atomicword_compat.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\atomicops_internals_portable.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\atomicops_internals_x86_msvc.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\auto_reset.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\barrier_closure.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\base_export.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\base_paths.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\base_paths_win.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\base_switches.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\base64.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\base64url.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\big_endian.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\bind.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\bind_helpers.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\bind_internal.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\bind_internal_win.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\bit_cast.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\bits.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\build_time.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\callback.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\callback_forward.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\callback_helpers.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\callback_internal.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\callback_list.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\cancelable_callback.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\command_line.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\compiler_specific.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\cpu.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\critical_closure.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\deferred_sequenced_task_runner.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\environment.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\event_types.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\feature_list.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\file_version_info.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\file_version_info_win.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\format_macros.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\guid.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\hash.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\id_map.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\lazy_instance.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\location.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\logging.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\logging_win.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\macros.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\md5.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\move.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\native_library.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\observer_list.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\observer_list_threadsafe.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\path_service.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\pending_task.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\pickle.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\rand_util.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\run_loop.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\scoped_clear_errno.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\scoped_generic.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\scoped_native_library.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\scoped_observer.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\sequence_checker.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\sequence_checker_impl.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\sequenced_task_runner.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\sequenced_task_runner_helpers.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\single_thread_task_runner.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\stl_util.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\supports_user_data.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\sync_socket.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\sys_byteorder.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\sys_info.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\task_runner.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\task_runner_util.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\template_util.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\thread_task_runner_handle.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\tracked_objects.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\tracking_info.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\tuple.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\value_conversions.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\values.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\version.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\vlog.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\enum_variant.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\event_trace_consumer.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\event_trace_controller.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\event_trace_provider.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\i18n.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\iat_patch_function.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\iunknown_impl.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\message_window.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\object_watcher.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\pe_image.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\process_startup_helper.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\registry.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\resource_util.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_bstr.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_co_mem.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_com_initializer.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_comptr.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_gdi_object.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_handle.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_hdc.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_hglobal.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_process_information.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_propvariant.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_select_object.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\scoped_variant.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\startup_information.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\windows_version.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\win\wrapped_window_proc.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\non_thread_safe.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\non_thread_safe_impl.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\platform_thread.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\post_task_and_reply_impl.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\sequenced_task_runner_handle.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\sequenced_worker_pool.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\simple_thread.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\thread.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_checker.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_checker_impl.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_collision_warner.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_id_name_manager.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_local.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_local_storage.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\thread_restrictions.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\watchdog.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\threading\worker_pool.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\system_monitor\system_monitor.h">
+      <Filter>system_monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\synchronization\cancellation_flag.h">
+      <Filter>synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\synchronization\condition_variable.h">
+      <Filter>synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\synchronization\lock.h">
+      <Filter>synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\synchronization\lock_impl.h">
+      <Filter>synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\synchronization\spin_wait.h">
+      <Filter>synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\synchronization\waitable_event.h">
+      <Filter>synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\synchronization\waitable_event_watcher.h">
+      <Filter>synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\aligned_memory.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\discardable_memory.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\discardable_memory_allocator.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\discardable_shared_memory.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\linked_ptr.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\manual_constructor.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\memory_pressure_listener.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\memory_pressure_monitor.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\memory_pressure_monitor_win.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\ptr_util.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\raw_scoped_refptr_mismatch_checker.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\ref_counted.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\ref_counted_delete_on_message_loop.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\ref_counted_memory.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\scoped_policy.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\scoped_ptr.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\scoped_vector.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\shared_memory.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\shared_memory_handle.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\singleton.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\singleton_objc.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\memory\weak_ptr.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\dir_reader_fallback.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\file.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\file_enumerator.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\file_path.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\file_path_watcher.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\file_proxy.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\file_tracing.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\file_util.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\file_util_proxy.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\important_file_writer.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\memory_mapped_file.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\scoped_file.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\files\scoped_temp_dir.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\debug\alias.h">
+      <Filter>debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\debug\asan_invalid_access.h">
+      <Filter>debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\debug\close_handle_hook_win.h">
+      <Filter>debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\debug\crash_logging.h">
+      <Filter>debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\debug\debugger.h">
+      <Filter>debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\debug\dump_without_crashing.h">
+      <Filter>debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\debug\leak_annotations.h">
+      <Filter>debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\debug\leak_tracker.h">
+      <Filter>debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\debug\profiler.h">
+      <Filter>debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\debug\stack_trace.h">
+      <Filter>debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\debug\task_annotator.h">
+      <Filter>debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\message_loop\incoming_task_queue.h">
+      <Filter>message_loop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\message_loop\message_loop.h">
+      <Filter>message_loop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\message_loop\message_loop_task_runner.h">
+      <Filter>message_loop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\message_loop\message_pump.h">
+      <Filter>message_loop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\message_loop\message_pump_default.h">
+      <Filter>message_loop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\message_loop\message_pump_dispatcher.h">
+      <Filter>message_loop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\message_loop\message_pump_win.h">
+      <Filter>message_loop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\message_loop\timer_slack.h">
+      <Filter>message_loop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\bucket_ranges.h">
+      <Filter>metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\field_trial.h">
+      <Filter>metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram.h">
+      <Filter>metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram_base.h">
+      <Filter>metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram_delta_serialization.h">
+      <Filter>metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram_flattener.h">
+      <Filter>metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram_macros.h">
+      <Filter>metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram_samples.h">
+      <Filter>metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\histogram_snapshot_manager.h">
+      <Filter>metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\metrics_hashes.h">
+      <Filter>metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\sample_map.h">
+      <Filter>metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\sample_vector.h">
+      <Filter>metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\sparse_histogram.h">
+      <Filter>metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\statistics_recorder.h">
+      <Filter>metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\user_metrics.h">
+      <Filter>metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\metrics\user_metrics_action.h">
+      <Filter>metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\process\kill.h">
+      <Filter>process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\process\launch.h">
+      <Filter>process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\process\memory.h">
+      <Filter>process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\process\process.h">
+      <Filter>process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\process\process_handle.h">
+      <Filter>process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\process\process_info.h">
+      <Filter>process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\process\process_iterator.h">
+      <Filter>process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\process\process_metrics.h">
+      <Filter>process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\latin1_string_conversions.h">
+      <Filter>strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\nullable_string16.h">
+      <Filter>strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\pattern.h">
+      <Filter>strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\safe_sprintf.h">
+      <Filter>strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\string_number_conversions.h">
+      <Filter>strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\string_piece.h">
+      <Filter>strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\string_split.h">
+      <Filter>strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\string_tokenizer.h">
+      <Filter>strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\string_util.h">
+      <Filter>strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\string_util_win.h">
+      <Filter>strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\string16.h">
+      <Filter>strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\stringize_macros.h">
+      <Filter>strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\stringprintf.h">
+      <Filter>strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\sys_string_conversions.h">
+      <Filter>strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\utf_offset_string_conversions.h">
+      <Filter>strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\utf_string_conversion_utils.h">
+      <Filter>strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\strings\utf_string_conversions.h">
+      <Filter>strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\task\cancelable_task_tracker.h">
+      <Filter>task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\containers\adapters.h">
+      <Filter>containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\containers\hash_tables.h">
+      <Filter>containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\containers\linked_list.h">
+      <Filter>containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\containers\mru_cache.h">
+      <Filter>containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\containers\scoped_ptr_hash_map.h">
+      <Filter>containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\containers\small_map.h">
+      <Filter>containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\containers\stack_container.h">
+      <Filter>containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\time\clock.h">
+      <Filter>time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\time\default_clock.h">
+      <Filter>time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\time\default_tick_clock.h">
+      <Filter>time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\time\tick_clock.h">
+      <Filter>time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\time\time.h">
+      <Filter>time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\timer\elapsed_timer.h">
+      <Filter>timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\timer\hi_res_timer_manager.h">
+      <Filter>timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\timer\mock_timer.h">
+      <Filter>timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\timer\timer.h">
+      <Filter>timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\common\trace_event_common.h">
+      <Filter>trace_event\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_allocation_context.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_allocation_context_tracker.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_allocation_register.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_heap_dump_writer.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_stack_frame_deduplicator.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\heap_profiler_type_name_deduplicator.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\malloc_dump_provider.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\memory_allocator_dump.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\memory_allocator_dump_guid.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\memory_dump_manager.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\memory_dump_provider.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\memory_dump_request_args.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\memory_dump_session_state.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\process_memory_dump.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\process_memory_maps.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\process_memory_maps_dump_provider.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\process_memory_totals.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\process_memory_totals_dump_provider.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_buffer.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_config.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_argument.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_etw_export_win.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_impl.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_memory_overhead.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_synthetic_delay.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_event_system_stats_monitor.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_log.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\trace_sampling_thread.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\tracing_agent.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\winheap_dump_provider_win.h">
+      <Filter>trace_event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\numerics\safe_conversions.h">
+      <Filter>numerics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\numerics\safe_conversions_impl.h">
+      <Filter>numerics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\numerics\safe_math.h">
+      <Filter>numerics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\numerics\safe_math_impl.h">
+      <Filter>numerics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\profiler\alternate_timer.h">
+      <Filter>profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\profiler\native_stack_sampler.h">
+      <Filter>profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\profiler\scoped_profile.h">
+      <Filter>profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\profiler\scoped_tracker.h">
+      <Filter>profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\profiler\stack_sampling_profiler.h">
+      <Filter>profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\profiler\tracked_time.h">
+      <Filter>profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\profiler\win32_stack_frame_unwinder.h">
+      <Filter>profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\allocator\allocator_check.h">
+      <Filter>allocator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\allocator\allocator_extension.h">
+      <Filter>allocator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\third_party\dynamic_annotations\dynamic_annotations.h">
+      <Filter>third_party\dynamic_annotations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\third_party\valgrind\memcheck.h">
+      <Filter>third_party\valgrind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\third_party\valgrind\valgrind.h">
+      <Filter>third_party\valgrind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\trace_event\etw_manifest\chrome_events_win.h">
+      <Filter>trace_event\etw_manifest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\power_monitor\power_monitor.h">
+      <Filter>power_monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\power_monitor\power_monitor_device_source.h">
+      <Filter>power_monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\power_monitor\power_monitor_source.h">
+      <Filter>power_monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\google_base\base\power_monitor\power_observer.h">
+      <Filter>power_monitor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\base.isolate" />
+  </ItemGroup>
+</Project>

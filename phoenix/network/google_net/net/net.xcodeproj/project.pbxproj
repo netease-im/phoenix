@@ -1,0 +1,1159 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E6B436422F049DD0050230B /* serial_worker.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0E6B435A22F049DD0050230B /* serial_worker.cc */; };
+		0E6B436522F049DD0050230B /* serial_worker.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0E6B435A22F049DD0050230B /* serial_worker.cc */; };
+		0E6B436822F049DD0050230B /* url_canon.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E6B435C22F049DD0050230B /* url_canon.h */; };
+		0E6B436922F049DD0050230B /* url_parse.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0E6B435D22F049DD0050230B /* url_parse.cc */; };
+		0E6B436A22F049DD0050230B /* url_parse.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0E6B435D22F049DD0050230B /* url_parse.cc */; };
+		0E6B436B22F049DD0050230B /* url_canon.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0E6B435E22F049DD0050230B /* url_canon.cc */; };
+		0E6B436C22F049DD0050230B /* url_canon.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0E6B435E22F049DD0050230B /* url_canon.cc */; };
+		0E6B436D22F049DD0050230B /* url_parse_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E6B435F22F049DD0050230B /* url_parse_internal.h */; };
+		0E6B436E22F049DD0050230B /* serial_worker.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E6B436022F049DD0050230B /* serial_worker.h */; };
+		0E6B436F22F049DD0050230B /* url_util_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E6B436122F049DD0050230B /* url_util_internal.h */; };
+		0E6B437122F049DD0050230B /* url_parse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E6B436322F049DD0050230B /* url_parse.h */; };
+		0EFBD97E22F4169600013C77 /* nim_net_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EFBD97922F4169500013C77 /* nim_net_util.cpp */; };
+		0EFBD97F22F4169600013C77 /* nim_net_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EFBD97922F4169500013C77 /* nim_net_util.cpp */; };
+		0EFBD98022F4169600013C77 /* nim_network_change_observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EFBD97A22F4169500013C77 /* nim_network_change_observer.cpp */; };
+		0EFBD98122F4169600013C77 /* nim_network_change_observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EFBD97A22F4169500013C77 /* nim_network_change_observer.cpp */; };
+		0EFBD98222F4169600013C77 /* sys_addrinfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EFBD97B22F4169500013C77 /* sys_addrinfo.h */; };
+		0EFBD98322F4169600013C77 /* nim_net_util.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EFBD97C22F4169500013C77 /* nim_net_util.h */; };
+		0EFBD98422F4169600013C77 /* nim_network_change_observer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EFBD97D22F4169500013C77 /* nim_network_change_observer.h */; };
+		872C1FA122BB331E0009A59B /* curl_network_session_manager_uv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 872C1F6C22BB331D0009A59B /* curl_network_session_manager_uv.cpp */; };
+		872C1FA222BB331E0009A59B /* curl_network_session_manager_uv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 872C1F6C22BB331D0009A59B /* curl_network_session_manager_uv.cpp */; };
+		872C1FA322BB331E0009A59B /* curl_network_session_manager_uv.h in Headers */ = {isa = PBXBuildFile; fileRef = 872C1F6D22BB331D0009A59B /* curl_network_session_manager_uv.h */; };
+		872C1FA422BB331E0009A59B /* curl_http_request.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 872C1F6E22BB331D0009A59B /* curl_http_request.cpp */; };
+		872C1FA522BB331E0009A59B /* curl_http_request.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 872C1F6E22BB331D0009A59B /* curl_http_request.cpp */; };
+		872C1FA622BB331E0009A59B /* url_session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 872C1F6F22BB331D0009A59B /* url_session.cpp */; };
+		872C1FA722BB331E0009A59B /* url_session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 872C1F6F22BB331D0009A59B /* url_session.cpp */; };
+		872C1FA822BB331E0009A59B /* curl_network_session_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 872C1F7022BB331D0009A59B /* curl_network_session_manager.h */; };
+		872C1FA922BB331E0009A59B /* url_session.h in Headers */ = {isa = PBXBuildFile; fileRef = 872C1F7122BB331D0009A59B /* url_session.h */; };
+		872C1FAA22BB331E0009A59B /* url_session_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 872C1F7222BB331D0009A59B /* url_session_manager.h */; };
+		872C1FAB22BB331E0009A59B /* curl_http_request.h in Headers */ = {isa = PBXBuildFile; fileRef = 872C1F7322BB331D0009A59B /* curl_http_request.h */; };
+		872C1FAC22BB331E0009A59B /* curl_http_request_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 872C1F7422BB331D0009A59B /* curl_http_request_base.cpp */; };
+		872C1FAD22BB331E0009A59B /* curl_http_request_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 872C1F7422BB331D0009A59B /* curl_http_request_base.cpp */; };
+		872C1FAE22BB331E0009A59B /* message_pump_for_uv.h in Headers */ = {isa = PBXBuildFile; fileRef = 872C1F7522BB331D0009A59B /* message_pump_for_uv.h */; };
+		872C1FAF22BB331E0009A59B /* curl_network_session.h in Headers */ = {isa = PBXBuildFile; fileRef = 872C1F7622BB331D0009A59B /* curl_network_session.h */; };
+		872C1FB022BB331E0009A59B /* url_session_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 872C1F7722BB331D0009A59B /* url_session_manager.cpp */; };
+		872C1FB122BB331E0009A59B /* url_session_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 872C1F7722BB331D0009A59B /* url_session_manager.cpp */; };
+		872C1FB222BB331E0009A59B /* curl_http_request_base.h in Headers */ = {isa = PBXBuildFile; fileRef = 872C1F7822BB331D0009A59B /* curl_http_request_base.h */; };
+		872C1FB322BB331E0009A59B /* curl_network_session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 872C1F7922BB331D0009A59B /* curl_network_session.cpp */; };
+		872C1FB422BB331E0009A59B /* curl_network_session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 872C1F7922BB331D0009A59B /* curl_network_session.cpp */; };
+		872C1FB522BB331E0009A59B /* message_pump_for_uv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 872C1F7A22BB331D0009A59B /* message_pump_for_uv.cpp */; };
+		872C1FB622BB331E0009A59B /* message_pump_for_uv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 872C1F7A22BB331D0009A59B /* message_pump_for_uv.cpp */; };
+		872C1FB922BB331E0009A59B /* net_export.h in Headers */ = {isa = PBXBuildFile; fileRef = 872C1F7C22BB331D0009A59B /* net_export.h */; };
+		872C1FBA22BB331E0009A59B /* build_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 872C1F7E22BB331D0009A59B /* build_config.h */; };
+		872C1FBB22BB331E0009A59B /* phoenix_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 872C1F8022BB331D0009A59B /* phoenix_api.h */; };
+		872C1FBC22BB331E0009A59B /* phoenix_def.h in Headers */ = {isa = PBXBuildFile; fileRef = 872C1F8122BB331D0009A59B /* phoenix_def.h */; };
+		872C1FBD22BB331E0009A59B /* phoenix_api.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 872C1F8222BB331D0009A59B /* phoenix_api.cpp */; };
+		872C1FBE22BB331E0009A59B /* phoenix_api.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 872C1F8222BB331D0009A59B /* phoenix_api.cpp */; };
+		872C1FBF22BB331E0009A59B /* log.h in Headers */ = {isa = PBXBuildFile; fileRef = 872C1F8422BB331D0009A59B /* log.h */; };
+		872C1FC022BB331E0009A59B /* tcp_client_socket.h in Headers */ = {isa = PBXBuildFile; fileRef = 872C1F8622BB331D0009A59B /* tcp_client_socket.h */; };
+		872C1FC122BB331E0009A59B /* socket_wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 872C1F8722BB331D0009A59B /* socket_wrapper.cpp */; };
+		872C1FC222BB331E0009A59B /* socket_wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 872C1F8722BB331D0009A59B /* socket_wrapper.cpp */; };
+		872C1FC322BB331E0009A59B /* socket_wrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 872C1F8822BB331D0009A59B /* socket_wrapper.h */; };
+		872C1FC422BB331E0009A59B /* socket_handler.h in Headers */ = {isa = PBXBuildFile; fileRef = 872C1F8922BB331D0009A59B /* socket_handler.h */; };
+		872C1FC522BB331E0009A59B /* tcp_client_socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 872C1F8A22BB331D0009A59B /* tcp_client_socket.cpp */; };
+		872C1FC622BB331E0009A59B /* tcp_client_socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 872C1F8A22BB331D0009A59B /* tcp_client_socket.cpp */; };
+		87415D902398D2C7009CD293 /* network_interfaces_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 87415D8E2398D2C6009CD293 /* network_interfaces_mac.h */; };
+		87415D912398D2C7009CD293 /* network_interfaces_mac.cc in Sources */ = {isa = PBXBuildFile; fileRef = 87415D8F2398D2C6009CD293 /* network_interfaces_mac.cc */; };
+		87415D922398D2C7009CD293 /* network_interfaces_mac.cc in Sources */ = {isa = PBXBuildFile; fileRef = 87415D8F2398D2C6009CD293 /* network_interfaces_mac.cc */; };
+		87415DA22398F561009CD293 /* ip_pattern.cc in Sources */ = {isa = PBXBuildFile; fileRef = 87415DA02398F560009CD293 /* ip_pattern.cc */; };
+		87415DA32398F561009CD293 /* ip_pattern.cc in Sources */ = {isa = PBXBuildFile; fileRef = 87415DA02398F560009CD293 /* ip_pattern.cc */; };
+		87415DA42398F561009CD293 /* ip_pattern.h in Headers */ = {isa = PBXBuildFile; fileRef = 87415DA12398F561009CD293 /* ip_pattern.h */; };
+		87415DA92398FC9C009CD293 /* url_canon_ip.h in Headers */ = {isa = PBXBuildFile; fileRef = 87415DA52398FC9C009CD293 /* url_canon_ip.h */; };
+		87415DAA2398FC9C009CD293 /* url_canon_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 87415DA62398FC9C009CD293 /* url_canon_internal.h */; };
+		87415DAB2398FC9C009CD293 /* url_canon_ip.cc in Sources */ = {isa = PBXBuildFile; fileRef = 87415DA72398FC9C009CD293 /* url_canon_ip.cc */; };
+		87415DAC2398FC9C009CD293 /* url_canon_ip.cc in Sources */ = {isa = PBXBuildFile; fileRef = 87415DA72398FC9C009CD293 /* url_canon_ip.cc */; };
+		87415DAD2398FC9C009CD293 /* url_canon_internal.cc in Sources */ = {isa = PBXBuildFile; fileRef = 87415DA82398FC9C009CD293 /* url_canon_internal.cc */; };
+		87415DAE2398FC9C009CD293 /* url_canon_internal.cc in Sources */ = {isa = PBXBuildFile; fileRef = 87415DA82398FC9C009CD293 /* url_canon_internal.cc */; };
+		87415DB123990004009CD293 /* url_canon_stdstring.h in Headers */ = {isa = PBXBuildFile; fileRef = 87415DAF23990003009CD293 /* url_canon_stdstring.h */; };
+		87415DB223990004009CD293 /* url_canon_stdstring.cc in Sources */ = {isa = PBXBuildFile; fileRef = 87415DB023990004009CD293 /* url_canon_stdstring.cc */; };
+		87415DB323990004009CD293 /* url_canon_stdstring.cc in Sources */ = {isa = PBXBuildFile; fileRef = 87415DB023990004009CD293 /* url_canon_stdstring.cc */; };
+		8772CF4523989D8C00F6656E /* dns_config_watcher_mac.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF3523989D8A00F6656E /* dns_config_watcher_mac.cc */; };
+		8772CF4623989D8C00F6656E /* dns_config_watcher_mac.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF3523989D8A00F6656E /* dns_config_watcher_mac.cc */; };
+		8772CF4723989D8C00F6656E /* dns_config_service_posix.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF3623989D8A00F6656E /* dns_config_service_posix.cc */; };
+		8772CF4823989D8C00F6656E /* dns_config_service_posix.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF3623989D8A00F6656E /* dns_config_service_posix.cc */; };
+		8772CF4A23989D8C00F6656E /* dns_hosts.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF3823989D8B00F6656E /* dns_hosts.cc */; };
+		8772CF4B23989D8C00F6656E /* dns_hosts.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF3823989D8B00F6656E /* dns_hosts.cc */; };
+		8772CF4C23989D8C00F6656E /* notify_watcher_mac.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF3923989D8B00F6656E /* notify_watcher_mac.cc */; };
+		8772CF4D23989D8C00F6656E /* notify_watcher_mac.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF3923989D8B00F6656E /* notify_watcher_mac.cc */; };
+		8772CF4E23989D8C00F6656E /* dns_config_service.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF3A23989D8B00F6656E /* dns_config_service.cc */; };
+		8772CF4F23989D8C00F6656E /* dns_config_service.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF3A23989D8B00F6656E /* dns_config_service.cc */; };
+		8772CF5023989D8C00F6656E /* dns_config_service.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF3B23989D8B00F6656E /* dns_config_service.h */; };
+		8772CF5123989D8C00F6656E /* notify_watcher_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF3C23989D8B00F6656E /* notify_watcher_mac.h */; };
+		8772CF5223989D8C00F6656E /* dns_config_service_posix.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF3D23989D8B00F6656E /* dns_config_service_posix.h */; };
+		8772CF5323989D8C00F6656E /* dns_hosts.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF3E23989D8B00F6656E /* dns_hosts.h */; };
+		8772CF5623989D8C00F6656E /* dns_protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF4023989D8B00F6656E /* dns_protocol.h */; };
+		8772CF5723989D8C00F6656E /* dns_config_watcher_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF4123989D8B00F6656E /* dns_config_watcher_mac.h */; };
+		8772CF8C2398A3F500F6656E /* network_change_notifier.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF582398A3EE00F6656E /* network_change_notifier.cc */; };
+		8772CF8D2398A3F500F6656E /* network_change_notifier.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF582398A3EE00F6656E /* network_change_notifier.cc */; };
+		8772CF8E2398A3F500F6656E /* address_family.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF592398A3EE00F6656E /* address_family.h */; };
+		8772CF8F2398A3F500F6656E /* network_change_notifier_factory.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF5A2398A3EE00F6656E /* network_change_notifier_factory.h */; };
+		8772CF902398A3F500F6656E /* ip_address.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF5B2398A3EE00F6656E /* ip_address.cc */; };
+		8772CF912398A3F500F6656E /* ip_address.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF5B2398A3EE00F6656E /* ip_address.cc */; };
+		8772CF922398A3F500F6656E /* escape.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF5C2398A3EF00F6656E /* escape.h */; };
+		8772CF932398A3F500F6656E /* address_list.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF5D2398A3EF00F6656E /* address_list.cc */; };
+		8772CF942398A3F500F6656E /* address_list.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF5D2398A3EF00F6656E /* address_list.cc */; };
+		8772CF952398A3F500F6656E /* network_change_notifier_mac.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF5E2398A3EF00F6656E /* network_change_notifier_mac.cc */; };
+		8772CF962398A3F500F6656E /* network_change_notifier_mac.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF5E2398A3EF00F6656E /* network_change_notifier_mac.cc */; };
+		8772CF992398A3F500F6656E /* address_list.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF602398A3EF00F6656E /* address_list.h */; };
+		8772CF9A2398A3F500F6656E /* net_error_list.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF612398A3EF00F6656E /* net_error_list.h */; };
+		8772CF9C2398A3F600F6656E /* net_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF632398A3EF00F6656E /* net_util.cpp */; };
+		8772CF9D2398A3F600F6656E /* net_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF632398A3EF00F6656E /* net_util.cpp */; };
+		8772CF9E2398A3F600F6656E /* parse_number.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF642398A3F000F6656E /* parse_number.h */; };
+		8772CF9F2398A3F600F6656E /* network_change_notifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF652398A3F000F6656E /* network_change_notifier.h */; };
+		8772CFA02398A3F600F6656E /* ip_endpoint.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF662398A3F000F6656E /* ip_endpoint.cc */; };
+		8772CFA12398A3F600F6656E /* ip_endpoint.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF662398A3F000F6656E /* ip_endpoint.cc */; };
+		8772CFAA2398A3F600F6656E /* network_config_watcher_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF6D2398A3F000F6656E /* network_config_watcher_mac.h */; };
+		8772CFAD2398A3F600F6656E /* proxy_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF6F2398A3F000F6656E /* proxy_config.h */; };
+		8772CFAE2398A3F600F6656E /* net_errors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF702398A3F100F6656E /* net_errors.cpp */; };
+		8772CFAF2398A3F600F6656E /* net_errors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF702398A3F100F6656E /* net_errors.cpp */; };
+		8772CFB02398A3F600F6656E /* ip_endpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF712398A3F100F6656E /* ip_endpoint.h */; };
+		8772CFB22398A3F600F6656E /* proxy_config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF732398A3F100F6656E /* proxy_config.cpp */; };
+		8772CFB32398A3F600F6656E /* proxy_config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF732398A3F100F6656E /* proxy_config.cpp */; };
+		8772CFB92398A3F700F6656E /* net_errors.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF782398A3F200F6656E /* net_errors.h */; };
+		8772CFBA2398A3F700F6656E /* ip_address_number.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF792398A3F200F6656E /* ip_address_number.h */; };
+		8772CFBB2398A3F700F6656E /* network_interfaces_posix.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF7A2398A3F200F6656E /* network_interfaces_posix.cc */; };
+		8772CFBC2398A3F700F6656E /* network_interfaces_posix.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF7A2398A3F200F6656E /* network_interfaces_posix.cc */; };
+		8772CFBD2398A3F700F6656E /* ip_address_number.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF7B2398A3F200F6656E /* ip_address_number.cc */; };
+		8772CFBE2398A3F700F6656E /* ip_address_number.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF7B2398A3F200F6656E /* ip_address_number.cc */; };
+		8772CFC12398A3F700F6656E /* io_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF7D2398A3F200F6656E /* io_buffer.cpp */; };
+		8772CFC22398A3F700F6656E /* io_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF7D2398A3F200F6656E /* io_buffer.cpp */; };
+		8772CFC32398A3F700F6656E /* address_family.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF7E2398A3F200F6656E /* address_family.cc */; };
+		8772CFC42398A3F700F6656E /* address_family.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF7E2398A3F200F6656E /* address_family.cc */; };
+		8772CFC52398A3F700F6656E /* escape.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF7F2398A3F300F6656E /* escape.cc */; };
+		8772CFC62398A3F700F6656E /* escape.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF7F2398A3F300F6656E /* escape.cc */; };
+		8772CFC72398A3F700F6656E /* net_util.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF802398A3F300F6656E /* net_util.h */; };
+		8772CFC82398A3F700F6656E /* sys_addrinfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF812398A3F300F6656E /* sys_addrinfo.h */; };
+		8772CFC92398A3F700F6656E /* parse_number.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF822398A3F300F6656E /* parse_number.cc */; };
+		8772CFCA2398A3F700F6656E /* parse_number.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF822398A3F300F6656E /* parse_number.cc */; };
+		8772CFCB2398A3F700F6656E /* network_interfaces.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF832398A3F300F6656E /* network_interfaces.h */; };
+		8772CFCE2398A3F700F6656E /* io_buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF852398A3F400F6656E /* io_buffer.h */; };
+		8772CFCF2398A3F700F6656E /* network_change_notifier_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF862398A3F400F6656E /* network_change_notifier_mac.h */; };
+		8772CFD02398A3F700F6656E /* network_interfaces.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF872398A3F400F6656E /* network_interfaces.cc */; };
+		8772CFD12398A3F700F6656E /* network_interfaces.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF872398A3F400F6656E /* network_interfaces.cc */; };
+		8772CFD22398A3F700F6656E /* completion_callback.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF882398A3F400F6656E /* completion_callback.h */; };
+		8772CFD32398A3F700F6656E /* ip_address.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF892398A3F400F6656E /* ip_address.h */; };
+		8772CFD42398A3F800F6656E /* network_config_watcher_mac.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF8A2398A3F500F6656E /* network_config_watcher_mac.cc */; };
+		8772CFD52398A3F800F6656E /* network_config_watcher_mac.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8772CF8A2398A3F500F6656E /* network_config_watcher_mac.cc */; };
+		8772CFD62398A3F800F6656E /* network_interfaces_posix.h in Headers */ = {isa = PBXBuildFile; fileRef = 8772CF8B2398A3F500F6656E /* network_interfaces_posix.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		872C1F4622BB2DD80009A59B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0E6B0E9322F0328E0050230B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0E6B0E9822F03DDE0050230B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		0E6B435A22F049DD0050230B /* serial_worker.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = serial_worker.cc; sourceTree = "<group>"; };
+		0E6B435C22F049DD0050230B /* url_canon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = url_canon.h; sourceTree = "<group>"; };
+		0E6B435D22F049DD0050230B /* url_parse.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = url_parse.cc; sourceTree = "<group>"; };
+		0E6B435E22F049DD0050230B /* url_canon.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = url_canon.cc; sourceTree = "<group>"; };
+		0E6B435F22F049DD0050230B /* url_parse_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = url_parse_internal.h; sourceTree = "<group>"; };
+		0E6B436022F049DD0050230B /* serial_worker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = serial_worker.h; sourceTree = "<group>"; };
+		0E6B436122F049DD0050230B /* url_util_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = url_util_internal.h; sourceTree = "<group>"; };
+		0E6B436322F049DD0050230B /* url_parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = url_parse.h; sourceTree = "<group>"; };
+		0EFBD97922F4169500013C77 /* nim_net_util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nim_net_util.cpp; sourceTree = "<group>"; };
+		0EFBD97A22F4169500013C77 /* nim_network_change_observer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nim_network_change_observer.cpp; sourceTree = "<group>"; };
+		0EFBD97B22F4169500013C77 /* sys_addrinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sys_addrinfo.h; sourceTree = "<group>"; };
+		0EFBD97C22F4169500013C77 /* nim_net_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nim_net_util.h; sourceTree = "<group>"; };
+		0EFBD97D22F4169500013C77 /* nim_network_change_observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nim_network_change_observer.h; sourceTree = "<group>"; };
+		872C1F4822BB2DD80009A59B /* libnet iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libnet iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		872C1F5622BB2DEB0009A59B /* libnet Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libnet Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		872C1F6C22BB331D0009A59B /* curl_network_session_manager_uv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = curl_network_session_manager_uv.cpp; sourceTree = "<group>"; };
+		872C1F6D22BB331D0009A59B /* curl_network_session_manager_uv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curl_network_session_manager_uv.h; sourceTree = "<group>"; };
+		872C1F6E22BB331D0009A59B /* curl_http_request.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = curl_http_request.cpp; sourceTree = "<group>"; };
+		872C1F6F22BB331D0009A59B /* url_session.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = url_session.cpp; sourceTree = "<group>"; };
+		872C1F7022BB331D0009A59B /* curl_network_session_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curl_network_session_manager.h; sourceTree = "<group>"; };
+		872C1F7122BB331D0009A59B /* url_session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = url_session.h; sourceTree = "<group>"; };
+		872C1F7222BB331D0009A59B /* url_session_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = url_session_manager.h; sourceTree = "<group>"; };
+		872C1F7322BB331D0009A59B /* curl_http_request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curl_http_request.h; sourceTree = "<group>"; };
+		872C1F7422BB331D0009A59B /* curl_http_request_base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = curl_http_request_base.cpp; sourceTree = "<group>"; };
+		872C1F7522BB331D0009A59B /* message_pump_for_uv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message_pump_for_uv.h; sourceTree = "<group>"; };
+		872C1F7622BB331D0009A59B /* curl_network_session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curl_network_session.h; sourceTree = "<group>"; };
+		872C1F7722BB331D0009A59B /* url_session_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = url_session_manager.cpp; sourceTree = "<group>"; };
+		872C1F7822BB331D0009A59B /* curl_http_request_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curl_http_request_base.h; sourceTree = "<group>"; };
+		872C1F7922BB331D0009A59B /* curl_network_session.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = curl_network_session.cpp; sourceTree = "<group>"; };
+		872C1F7A22BB331D0009A59B /* message_pump_for_uv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = message_pump_for_uv.cpp; sourceTree = "<group>"; };
+		872C1F7B22BB331D0009A59B /* curl_network_session_manager_unittest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = curl_network_session_manager_unittest.cpp; sourceTree = "<group>"; };
+		872C1F7C22BB331D0009A59B /* net_export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net_export.h; sourceTree = "<group>"; };
+		872C1F7E22BB331D0009A59B /* build_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = build_config.h; sourceTree = "<group>"; };
+		872C1F8022BB331D0009A59B /* phoenix_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = phoenix_api.h; sourceTree = "<group>"; };
+		872C1F8122BB331D0009A59B /* phoenix_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = phoenix_def.h; sourceTree = "<group>"; };
+		872C1F8222BB331D0009A59B /* phoenix_api.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = phoenix_api.cpp; sourceTree = "<group>"; };
+		872C1F8422BB331D0009A59B /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		872C1F8622BB331D0009A59B /* tcp_client_socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tcp_client_socket.h; sourceTree = "<group>"; };
+		872C1F8722BB331D0009A59B /* socket_wrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = socket_wrapper.cpp; sourceTree = "<group>"; };
+		872C1F8822BB331D0009A59B /* socket_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socket_wrapper.h; sourceTree = "<group>"; };
+		872C1F8922BB331D0009A59B /* socket_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socket_handler.h; sourceTree = "<group>"; };
+		872C1F8A22BB331D0009A59B /* tcp_client_socket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tcp_client_socket.cpp; sourceTree = "<group>"; };
+		87415D8E2398D2C6009CD293 /* network_interfaces_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = network_interfaces_mac.h; sourceTree = "<group>"; };
+		87415D8F2398D2C6009CD293 /* network_interfaces_mac.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network_interfaces_mac.cc; sourceTree = "<group>"; };
+		87415DA02398F560009CD293 /* ip_pattern.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ip_pattern.cc; sourceTree = "<group>"; };
+		87415DA12398F561009CD293 /* ip_pattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip_pattern.h; sourceTree = "<group>"; };
+		87415DA52398FC9C009CD293 /* url_canon_ip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = url_canon_ip.h; sourceTree = "<group>"; };
+		87415DA62398FC9C009CD293 /* url_canon_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = url_canon_internal.h; sourceTree = "<group>"; };
+		87415DA72398FC9C009CD293 /* url_canon_ip.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = url_canon_ip.cc; sourceTree = "<group>"; };
+		87415DA82398FC9C009CD293 /* url_canon_internal.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = url_canon_internal.cc; sourceTree = "<group>"; };
+		87415DAF23990003009CD293 /* url_canon_stdstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = url_canon_stdstring.h; sourceTree = "<group>"; };
+		87415DB023990004009CD293 /* url_canon_stdstring.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = url_canon_stdstring.cc; sourceTree = "<group>"; };
+		8772CF3523989D8A00F6656E /* dns_config_watcher_mac.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dns_config_watcher_mac.cc; sourceTree = "<group>"; };
+		8772CF3623989D8A00F6656E /* dns_config_service_posix.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dns_config_service_posix.cc; sourceTree = "<group>"; };
+		8772CF3723989D8A00F6656E /* dns_config_service_win.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dns_config_service_win.h; sourceTree = "<group>"; };
+		8772CF3823989D8B00F6656E /* dns_hosts.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dns_hosts.cc; sourceTree = "<group>"; };
+		8772CF3923989D8B00F6656E /* notify_watcher_mac.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = notify_watcher_mac.cc; sourceTree = "<group>"; };
+		8772CF3A23989D8B00F6656E /* dns_config_service.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dns_config_service.cc; sourceTree = "<group>"; };
+		8772CF3B23989D8B00F6656E /* dns_config_service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dns_config_service.h; sourceTree = "<group>"; };
+		8772CF3C23989D8B00F6656E /* notify_watcher_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = notify_watcher_mac.h; sourceTree = "<group>"; };
+		8772CF3D23989D8B00F6656E /* dns_config_service_posix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dns_config_service_posix.h; sourceTree = "<group>"; };
+		8772CF3E23989D8B00F6656E /* dns_hosts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dns_hosts.h; sourceTree = "<group>"; };
+		8772CF3F23989D8B00F6656E /* dns_config_service_win.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dns_config_service_win.cc; sourceTree = "<group>"; };
+		8772CF4023989D8B00F6656E /* dns_protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dns_protocol.h; sourceTree = "<group>"; };
+		8772CF4123989D8B00F6656E /* dns_config_watcher_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dns_config_watcher_mac.h; sourceTree = "<group>"; };
+		8772CF582398A3EE00F6656E /* network_change_notifier.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network_change_notifier.cc; sourceTree = "<group>"; };
+		8772CF592398A3EE00F6656E /* address_family.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = address_family.h; sourceTree = "<group>"; };
+		8772CF5A2398A3EE00F6656E /* network_change_notifier_factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = network_change_notifier_factory.h; sourceTree = "<group>"; };
+		8772CF5B2398A3EE00F6656E /* ip_address.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ip_address.cc; sourceTree = "<group>"; };
+		8772CF5C2398A3EF00F6656E /* escape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = escape.h; sourceTree = "<group>"; };
+		8772CF5D2398A3EF00F6656E /* address_list.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = address_list.cc; sourceTree = "<group>"; };
+		8772CF5E2398A3EF00F6656E /* network_change_notifier_mac.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network_change_notifier_mac.cc; sourceTree = "<group>"; };
+		8772CF5F2398A3EF00F6656E /* network_interfaces_nacl.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network_interfaces_nacl.cc; sourceTree = "<group>"; };
+		8772CF602398A3EF00F6656E /* address_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = address_list.h; sourceTree = "<group>"; };
+		8772CF612398A3EF00F6656E /* net_error_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net_error_list.h; sourceTree = "<group>"; };
+		8772CF622398A3EF00F6656E /* network_change_notifier_win.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = network_change_notifier_win.h; sourceTree = "<group>"; };
+		8772CF632398A3EF00F6656E /* net_util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = net_util.cpp; sourceTree = "<group>"; };
+		8772CF642398A3F000F6656E /* parse_number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parse_number.h; sourceTree = "<group>"; };
+		8772CF652398A3F000F6656E /* network_change_notifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = network_change_notifier.h; sourceTree = "<group>"; };
+		8772CF662398A3F000F6656E /* ip_endpoint.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ip_endpoint.cc; sourceTree = "<group>"; };
+		8772CF682398A3F000F6656E /* winsock_util.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = winsock_util.cc; sourceTree = "<group>"; };
+		8772CF692398A3F000F6656E /* winsock_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winsock_util.h; sourceTree = "<group>"; };
+		8772CF6A2398A3F000F6656E /* winsock_init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winsock_init.h; sourceTree = "<group>"; };
+		8772CF6B2398A3F000F6656E /* winsock_init.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = winsock_init.cc; sourceTree = "<group>"; };
+		8772CF6C2398A3F000F6656E /* network_interfaces_win.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network_interfaces_win.cc; sourceTree = "<group>"; };
+		8772CF6D2398A3F000F6656E /* network_config_watcher_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = network_config_watcher_mac.h; sourceTree = "<group>"; };
+		8772CF6E2398A3F000F6656E /* network_interfaces_linux.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network_interfaces_linux.cc; sourceTree = "<group>"; };
+		8772CF6F2398A3F000F6656E /* proxy_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = proxy_config.h; sourceTree = "<group>"; };
+		8772CF702398A3F100F6656E /* net_errors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = net_errors.cpp; sourceTree = "<group>"; };
+		8772CF712398A3F100F6656E /* ip_endpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip_endpoint.h; sourceTree = "<group>"; };
+		8772CF722398A3F100F6656E /* network_interfaces_linux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = network_interfaces_linux.h; sourceTree = "<group>"; };
+		8772CF732398A3F100F6656E /* proxy_config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = proxy_config.cpp; sourceTree = "<group>"; };
+		8772CF752398A3F100F6656E /* network_change_notifier_linux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = network_change_notifier_linux.h; sourceTree = "<group>"; };
+		8772CF762398A3F100F6656E /* network_interfaces_win.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = network_interfaces_win.h; sourceTree = "<group>"; };
+		8772CF782398A3F200F6656E /* net_errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net_errors.h; sourceTree = "<group>"; };
+		8772CF792398A3F200F6656E /* ip_address_number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip_address_number.h; sourceTree = "<group>"; };
+		8772CF7A2398A3F200F6656E /* network_interfaces_posix.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network_interfaces_posix.cc; sourceTree = "<group>"; };
+		8772CF7B2398A3F200F6656E /* ip_address_number.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ip_address_number.cc; sourceTree = "<group>"; };
+		8772CF7C2398A3F200F6656E /* network_change_notifier_win.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network_change_notifier_win.cc; sourceTree = "<group>"; };
+		8772CF7D2398A3F200F6656E /* io_buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = io_buffer.cpp; sourceTree = "<group>"; };
+		8772CF7E2398A3F200F6656E /* address_family.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = address_family.cc; sourceTree = "<group>"; };
+		8772CF7F2398A3F300F6656E /* escape.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = escape.cc; sourceTree = "<group>"; };
+		8772CF802398A3F300F6656E /* net_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net_util.h; sourceTree = "<group>"; };
+		8772CF812398A3F300F6656E /* sys_addrinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sys_addrinfo.h; sourceTree = "<group>"; };
+		8772CF822398A3F300F6656E /* parse_number.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = parse_number.cc; sourceTree = "<group>"; };
+		8772CF832398A3F300F6656E /* network_interfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = network_interfaces.h; sourceTree = "<group>"; };
+		8772CF842398A3F400F6656E /* network_change_notifier_linux.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network_change_notifier_linux.cc; sourceTree = "<group>"; };
+		8772CF852398A3F400F6656E /* io_buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = io_buffer.h; sourceTree = "<group>"; };
+		8772CF862398A3F400F6656E /* network_change_notifier_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = network_change_notifier_mac.h; sourceTree = "<group>"; };
+		8772CF872398A3F400F6656E /* network_interfaces.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network_interfaces.cc; sourceTree = "<group>"; };
+		8772CF882398A3F400F6656E /* completion_callback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = completion_callback.h; sourceTree = "<group>"; };
+		8772CF892398A3F400F6656E /* ip_address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip_address.h; sourceTree = "<group>"; };
+		8772CF8A2398A3F500F6656E /* network_config_watcher_mac.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network_config_watcher_mac.cc; sourceTree = "<group>"; };
+		8772CF8B2398A3F500F6656E /* network_interfaces_posix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = network_interfaces_posix.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		872C1F4522BB2DD80009A59B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		872C1F5422BB2DEB0009A59B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E6B0E9222F0328D0050230B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E6B0E9822F03DDE0050230B /* SystemConfiguration.framework */,
+				0E6B0E9322F0328E0050230B /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0E6B433222F048A10050230B /* dns */ = {
+			isa = PBXGroup;
+			children = (
+				0E6B435A22F049DD0050230B /* serial_worker.cc */,
+				0E6B436022F049DD0050230B /* serial_worker.h */,
+				8772CF3623989D8A00F6656E /* dns_config_service_posix.cc */,
+				8772CF3D23989D8B00F6656E /* dns_config_service_posix.h */,
+				8772CF3F23989D8B00F6656E /* dns_config_service_win.cc */,
+				8772CF3723989D8A00F6656E /* dns_config_service_win.h */,
+				8772CF3A23989D8B00F6656E /* dns_config_service.cc */,
+				8772CF3B23989D8B00F6656E /* dns_config_service.h */,
+				8772CF3523989D8A00F6656E /* dns_config_watcher_mac.cc */,
+				8772CF4123989D8B00F6656E /* dns_config_watcher_mac.h */,
+				8772CF3823989D8B00F6656E /* dns_hosts.cc */,
+				8772CF3E23989D8B00F6656E /* dns_hosts.h */,
+				8772CF4023989D8B00F6656E /* dns_protocol.h */,
+				8772CF3923989D8B00F6656E /* notify_watcher_mac.cc */,
+				8772CF3C23989D8B00F6656E /* notify_watcher_mac.h */,
+			);
+			path = dns;
+			sourceTree = "<group>";
+		};
+		0E6B435922F049DD0050230B /* url */ = {
+			isa = PBXGroup;
+			children = (
+				0E6B435C22F049DD0050230B /* url_canon.h */,
+				0E6B435D22F049DD0050230B /* url_parse.cc */,
+				0E6B435E22F049DD0050230B /* url_canon.cc */,
+				0E6B435F22F049DD0050230B /* url_parse_internal.h */,
+				0E6B436122F049DD0050230B /* url_util_internal.h */,
+				0E6B436322F049DD0050230B /* url_parse.h */,
+				87415DB023990004009CD293 /* url_canon_stdstring.cc */,
+				87415DAF23990003009CD293 /* url_canon_stdstring.h */,
+				87415DA82398FC9C009CD293 /* url_canon_internal.cc */,
+				87415DA62398FC9C009CD293 /* url_canon_internal.h */,
+				87415DA72398FC9C009CD293 /* url_canon_ip.cc */,
+				87415DA52398FC9C009CD293 /* url_canon_ip.h */,
+			);
+			path = url;
+			sourceTree = "<group>";
+		};
+		872C1F0022BB2C990009A59B = {
+			isa = PBXGroup;
+			children = (
+				0EFBD97922F4169500013C77 /* nim_net_util.cpp */,
+				0EFBD97C22F4169500013C77 /* nim_net_util.h */,
+				0EFBD97A22F4169500013C77 /* nim_network_change_observer.cpp */,
+				0EFBD97D22F4169500013C77 /* nim_network_change_observer.h */,
+				0EFBD97B22F4169500013C77 /* sys_addrinfo.h */,
+				0E6B435922F049DD0050230B /* url */,
+				0E6B433222F048A10050230B /* dns */,
+				872C1F8B22BB331D0009A59B /* base */,
+				872C1F7D22BB331D0009A59B /* config */,
+				872C1F6B22BB331D0009A59B /* http */,
+				872C1F8322BB331D0009A59B /* log */,
+				872C1F7F22BB331D0009A59B /* phoenix */,
+				872C1F8522BB331D0009A59B /* socket */,
+				872C1F7C22BB331D0009A59B /* net_export.h */,
+				872C1F4922BB2DD80009A59B /* Products */,
+				0E6B0E9222F0328D0050230B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		872C1F4922BB2DD80009A59B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				872C1F4822BB2DD80009A59B /* libnet iOS.a */,
+				872C1F5622BB2DEB0009A59B /* libnet Mac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		872C1F6B22BB331D0009A59B /* http */ = {
+			isa = PBXGroup;
+			children = (
+				872C1F6C22BB331D0009A59B /* curl_network_session_manager_uv.cpp */,
+				872C1F6D22BB331D0009A59B /* curl_network_session_manager_uv.h */,
+				872C1F6E22BB331D0009A59B /* curl_http_request.cpp */,
+				872C1F6F22BB331D0009A59B /* url_session.cpp */,
+				872C1F7022BB331D0009A59B /* curl_network_session_manager.h */,
+				872C1F7122BB331D0009A59B /* url_session.h */,
+				872C1F7222BB331D0009A59B /* url_session_manager.h */,
+				872C1F7322BB331D0009A59B /* curl_http_request.h */,
+				872C1F7422BB331D0009A59B /* curl_http_request_base.cpp */,
+				872C1F7522BB331D0009A59B /* message_pump_for_uv.h */,
+				872C1F7622BB331D0009A59B /* curl_network_session.h */,
+				872C1F7722BB331D0009A59B /* url_session_manager.cpp */,
+				872C1F7822BB331D0009A59B /* curl_http_request_base.h */,
+				872C1F7922BB331D0009A59B /* curl_network_session.cpp */,
+				872C1F7A22BB331D0009A59B /* message_pump_for_uv.cpp */,
+				872C1F7B22BB331D0009A59B /* curl_network_session_manager_unittest.cpp */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		872C1F7D22BB331D0009A59B /* config */ = {
+			isa = PBXGroup;
+			children = (
+				872C1F7E22BB331D0009A59B /* build_config.h */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		872C1F7F22BB331D0009A59B /* phoenix */ = {
+			isa = PBXGroup;
+			children = (
+				872C1F8022BB331D0009A59B /* phoenix_api.h */,
+				872C1F8122BB331D0009A59B /* phoenix_def.h */,
+				872C1F8222BB331D0009A59B /* phoenix_api.cpp */,
+			);
+			path = phoenix;
+			sourceTree = "<group>";
+		};
+		872C1F8322BB331D0009A59B /* log */ = {
+			isa = PBXGroup;
+			children = (
+				872C1F8422BB331D0009A59B /* log.h */,
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
+		872C1F8522BB331D0009A59B /* socket */ = {
+			isa = PBXGroup;
+			children = (
+				872C1F8622BB331D0009A59B /* tcp_client_socket.h */,
+				872C1F8722BB331D0009A59B /* socket_wrapper.cpp */,
+				872C1F8822BB331D0009A59B /* socket_wrapper.h */,
+				872C1F8922BB331D0009A59B /* socket_handler.h */,
+				872C1F8A22BB331D0009A59B /* tcp_client_socket.cpp */,
+			);
+			path = socket;
+			sourceTree = "<group>";
+		};
+		872C1F8B22BB331D0009A59B /* base */ = {
+			isa = PBXGroup;
+			children = (
+				8772CF7E2398A3F200F6656E /* address_family.cc */,
+				8772CF592398A3EE00F6656E /* address_family.h */,
+				8772CF5D2398A3EF00F6656E /* address_list.cc */,
+				8772CF602398A3EF00F6656E /* address_list.h */,
+				8772CF882398A3F400F6656E /* completion_callback.h */,
+				8772CF7F2398A3F300F6656E /* escape.cc */,
+				8772CF5C2398A3EF00F6656E /* escape.h */,
+				8772CF7D2398A3F200F6656E /* io_buffer.cpp */,
+				8772CF852398A3F400F6656E /* io_buffer.h */,
+				8772CF7B2398A3F200F6656E /* ip_address_number.cc */,
+				8772CF792398A3F200F6656E /* ip_address_number.h */,
+				8772CF5B2398A3EE00F6656E /* ip_address.cc */,
+				8772CF892398A3F400F6656E /* ip_address.h */,
+				8772CF662398A3F000F6656E /* ip_endpoint.cc */,
+				8772CF712398A3F100F6656E /* ip_endpoint.h */,
+				87415DA02398F560009CD293 /* ip_pattern.cc */,
+				87415DA12398F561009CD293 /* ip_pattern.h */,
+				8772CF612398A3EF00F6656E /* net_error_list.h */,
+				8772CF702398A3F100F6656E /* net_errors.cpp */,
+				8772CF782398A3F200F6656E /* net_errors.h */,
+				8772CF632398A3EF00F6656E /* net_util.cpp */,
+				8772CF802398A3F300F6656E /* net_util.h */,
+				8772CF5A2398A3EE00F6656E /* network_change_notifier_factory.h */,
+				8772CF842398A3F400F6656E /* network_change_notifier_linux.cc */,
+				8772CF752398A3F100F6656E /* network_change_notifier_linux.h */,
+				8772CF5E2398A3EF00F6656E /* network_change_notifier_mac.cc */,
+				8772CF862398A3F400F6656E /* network_change_notifier_mac.h */,
+				8772CF7C2398A3F200F6656E /* network_change_notifier_win.cc */,
+				8772CF622398A3EF00F6656E /* network_change_notifier_win.h */,
+				8772CF582398A3EE00F6656E /* network_change_notifier.cc */,
+				8772CF652398A3F000F6656E /* network_change_notifier.h */,
+				8772CF8A2398A3F500F6656E /* network_config_watcher_mac.cc */,
+				8772CF6D2398A3F000F6656E /* network_config_watcher_mac.h */,
+				8772CF6E2398A3F000F6656E /* network_interfaces_linux.cc */,
+				8772CF722398A3F100F6656E /* network_interfaces_linux.h */,
+				87415D8F2398D2C6009CD293 /* network_interfaces_mac.cc */,
+				87415D8E2398D2C6009CD293 /* network_interfaces_mac.h */,
+				8772CF5F2398A3EF00F6656E /* network_interfaces_nacl.cc */,
+				8772CF7A2398A3F200F6656E /* network_interfaces_posix.cc */,
+				8772CF8B2398A3F500F6656E /* network_interfaces_posix.h */,
+				8772CF6C2398A3F000F6656E /* network_interfaces_win.cc */,
+				8772CF762398A3F100F6656E /* network_interfaces_win.h */,
+				8772CF872398A3F400F6656E /* network_interfaces.cc */,
+				8772CF832398A3F300F6656E /* network_interfaces.h */,
+				8772CF822398A3F300F6656E /* parse_number.cc */,
+				8772CF642398A3F000F6656E /* parse_number.h */,
+				8772CF732398A3F100F6656E /* proxy_config.cpp */,
+				8772CF6F2398A3F000F6656E /* proxy_config.h */,
+				8772CF812398A3F300F6656E /* sys_addrinfo.h */,
+				8772CF672398A3F000F6656E /* win */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		8772CF672398A3F000F6656E /* win */ = {
+			isa = PBXGroup;
+			children = (
+				8772CF682398A3F000F6656E /* winsock_util.cc */,
+				8772CF692398A3F000F6656E /* winsock_util.h */,
+				8772CF6A2398A3F000F6656E /* winsock_init.h */,
+				8772CF6B2398A3F000F6656E /* winsock_init.cc */,
+			);
+			path = win;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		872C1F5222BB2DEB0009A59B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8772CFC72398A3F700F6656E /* net_util.h in Headers */,
+				0E6B436F22F049DD0050230B /* url_util_internal.h in Headers */,
+				872C1FBF22BB331E0009A59B /* log.h in Headers */,
+				872C1FA922BB331E0009A59B /* url_session.h in Headers */,
+				8772CFCE2398A3F700F6656E /* io_buffer.h in Headers */,
+				0E6B436822F049DD0050230B /* url_canon.h in Headers */,
+				872C1FBB22BB331E0009A59B /* phoenix_api.h in Headers */,
+				872C1FA822BB331E0009A59B /* curl_network_session_manager.h in Headers */,
+				87415DA42398F561009CD293 /* ip_pattern.h in Headers */,
+				8772CFD22398A3F700F6656E /* completion_callback.h in Headers */,
+				8772CFC82398A3F700F6656E /* sys_addrinfo.h in Headers */,
+				8772CFD32398A3F700F6656E /* ip_address.h in Headers */,
+				872C1FC022BB331E0009A59B /* tcp_client_socket.h in Headers */,
+				872C1FA322BB331E0009A59B /* curl_network_session_manager_uv.h in Headers */,
+				8772CFB92398A3F700F6656E /* net_errors.h in Headers */,
+				872C1FBC22BB331E0009A59B /* phoenix_def.h in Headers */,
+				8772CF5723989D8C00F6656E /* dns_config_watcher_mac.h in Headers */,
+				8772CFCB2398A3F700F6656E /* network_interfaces.h in Headers */,
+				0EFBD98222F4169600013C77 /* sys_addrinfo.h in Headers */,
+				0EFBD98422F4169600013C77 /* nim_network_change_observer.h in Headers */,
+				8772CF9A2398A3F500F6656E /* net_error_list.h in Headers */,
+				8772CFAD2398A3F600F6656E /* proxy_config.h in Headers */,
+				8772CF8E2398A3F500F6656E /* address_family.h in Headers */,
+				872C1FAE22BB331E0009A59B /* message_pump_for_uv.h in Headers */,
+				8772CF992398A3F500F6656E /* address_list.h in Headers */,
+				8772CFAA2398A3F600F6656E /* network_config_watcher_mac.h in Headers */,
+				8772CF922398A3F500F6656E /* escape.h in Headers */,
+				8772CFBA2398A3F700F6656E /* ip_address_number.h in Headers */,
+				872C1FAA22BB331E0009A59B /* url_session_manager.h in Headers */,
+				8772CF5023989D8C00F6656E /* dns_config_service.h in Headers */,
+				872C1FC322BB331E0009A59B /* socket_wrapper.h in Headers */,
+				8772CF5223989D8C00F6656E /* dns_config_service_posix.h in Headers */,
+				872C1FB222BB331E0009A59B /* curl_http_request_base.h in Headers */,
+				8772CFCF2398A3F700F6656E /* network_change_notifier_mac.h in Headers */,
+				872C1FAF22BB331E0009A59B /* curl_network_session.h in Headers */,
+				8772CFD62398A3F800F6656E /* network_interfaces_posix.h in Headers */,
+				8772CF5123989D8C00F6656E /* notify_watcher_mac.h in Headers */,
+				0E6B436E22F049DD0050230B /* serial_worker.h in Headers */,
+				8772CF5323989D8C00F6656E /* dns_hosts.h in Headers */,
+				0E6B436D22F049DD0050230B /* url_parse_internal.h in Headers */,
+				872C1FC422BB331E0009A59B /* socket_handler.h in Headers */,
+				872C1FB922BB331E0009A59B /* net_export.h in Headers */,
+				87415D902398D2C7009CD293 /* network_interfaces_mac.h in Headers */,
+				8772CF9F2398A3F600F6656E /* network_change_notifier.h in Headers */,
+				87415DB123990004009CD293 /* url_canon_stdstring.h in Headers */,
+				87415DA92398FC9C009CD293 /* url_canon_ip.h in Headers */,
+				8772CFB02398A3F600F6656E /* ip_endpoint.h in Headers */,
+				0EFBD98322F4169600013C77 /* nim_net_util.h in Headers */,
+				0E6B437122F049DD0050230B /* url_parse.h in Headers */,
+				87415DAA2398FC9C009CD293 /* url_canon_internal.h in Headers */,
+				8772CF9E2398A3F600F6656E /* parse_number.h in Headers */,
+				8772CF8F2398A3F500F6656E /* network_change_notifier_factory.h in Headers */,
+				872C1FAB22BB331E0009A59B /* curl_http_request.h in Headers */,
+				8772CF5623989D8C00F6656E /* dns_protocol.h in Headers */,
+				872C1FBA22BB331E0009A59B /* build_config.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		872C1F4722BB2DD80009A59B /* net iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 872C1F5122BB2DD80009A59B /* Build configuration list for PBXNativeTarget "net iOS" */;
+			buildPhases = (
+				872C1F4422BB2DD80009A59B /* Sources */,
+				872C1F4522BB2DD80009A59B /* Frameworks */,
+				872C1F4622BB2DD80009A59B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "net iOS";
+			productName = "net iOS";
+			productReference = 872C1F4822BB2DD80009A59B /* libnet iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		872C1F5522BB2DEB0009A59B /* net Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 872C1F5C22BB2DEB0009A59B /* Build configuration list for PBXNativeTarget "net Mac" */;
+			buildPhases = (
+				872C1F5222BB2DEB0009A59B /* Headers */,
+				872C1F5322BB2DEB0009A59B /* Sources */,
+				872C1F5422BB2DEB0009A59B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "net Mac";
+			productName = "net Mac";
+			productReference = 872C1F5622BB2DEB0009A59B /* libnet Mac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		872C1F0122BB2C990009A59B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				TargetAttributes = {
+					872C1F4722BB2DD80009A59B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					872C1F5522BB2DEB0009A59B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 872C1F0422BB2C990009A59B /* Build configuration list for PBXProject "net" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 872C1F0022BB2C990009A59B;
+			productRefGroup = 872C1F4922BB2DD80009A59B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				872C1F4722BB2DD80009A59B /* net iOS */,
+				872C1F5522BB2DEB0009A59B /* net Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		872C1F4422BB2DD80009A59B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87415DAD2398FC9C009CD293 /* url_canon_internal.cc in Sources */,
+				8772CF4523989D8C00F6656E /* dns_config_watcher_mac.cc in Sources */,
+				0E6B436922F049DD0050230B /* url_parse.cc in Sources */,
+				8772CFC92398A3F700F6656E /* parse_number.cc in Sources */,
+				872C1FB522BB331E0009A59B /* message_pump_for_uv.cpp in Sources */,
+				8772CFC52398A3F700F6656E /* escape.cc in Sources */,
+				8772CFB22398A3F600F6656E /* proxy_config.cpp in Sources */,
+				87415D912398D2C7009CD293 /* network_interfaces_mac.cc in Sources */,
+				872C1FA122BB331E0009A59B /* curl_network_session_manager_uv.cpp in Sources */,
+				8772CFA02398A3F600F6656E /* ip_endpoint.cc in Sources */,
+				8772CF4723989D8C00F6656E /* dns_config_service_posix.cc in Sources */,
+				87415DB223990004009CD293 /* url_canon_stdstring.cc in Sources */,
+				8772CFAE2398A3F600F6656E /* net_errors.cpp in Sources */,
+				872C1FB022BB331E0009A59B /* url_session_manager.cpp in Sources */,
+				0E6B436B22F049DD0050230B /* url_canon.cc in Sources */,
+				8772CF8C2398A3F500F6656E /* network_change_notifier.cc in Sources */,
+				872C1FA422BB331E0009A59B /* curl_http_request.cpp in Sources */,
+				8772CF932398A3F500F6656E /* address_list.cc in Sources */,
+				0EFBD97E22F4169600013C77 /* nim_net_util.cpp in Sources */,
+				8772CFC12398A3F700F6656E /* io_buffer.cpp in Sources */,
+				8772CFC32398A3F700F6656E /* address_family.cc in Sources */,
+				872C1FBD22BB331E0009A59B /* phoenix_api.cpp in Sources */,
+				8772CF9C2398A3F600F6656E /* net_util.cpp in Sources */,
+				872C1FB322BB331E0009A59B /* curl_network_session.cpp in Sources */,
+				8772CFD02398A3F700F6656E /* network_interfaces.cc in Sources */,
+				8772CFBD2398A3F700F6656E /* ip_address_number.cc in Sources */,
+				8772CF952398A3F500F6656E /* network_change_notifier_mac.cc in Sources */,
+				872C1FAC22BB331E0009A59B /* curl_http_request_base.cpp in Sources */,
+				872C1FC122BB331E0009A59B /* socket_wrapper.cpp in Sources */,
+				8772CF902398A3F500F6656E /* ip_address.cc in Sources */,
+				0EFBD98022F4169600013C77 /* nim_network_change_observer.cpp in Sources */,
+				8772CF4A23989D8C00F6656E /* dns_hosts.cc in Sources */,
+				87415DA22398F561009CD293 /* ip_pattern.cc in Sources */,
+				872C1FC522BB331E0009A59B /* tcp_client_socket.cpp in Sources */,
+				8772CFD42398A3F800F6656E /* network_config_watcher_mac.cc in Sources */,
+				8772CF4E23989D8C00F6656E /* dns_config_service.cc in Sources */,
+				0E6B436422F049DD0050230B /* serial_worker.cc in Sources */,
+				87415DAB2398FC9C009CD293 /* url_canon_ip.cc in Sources */,
+				872C1FA622BB331E0009A59B /* url_session.cpp in Sources */,
+				8772CFBB2398A3F700F6656E /* network_interfaces_posix.cc in Sources */,
+				8772CF4C23989D8C00F6656E /* notify_watcher_mac.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		872C1F5322BB2DEB0009A59B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87415DAE2398FC9C009CD293 /* url_canon_internal.cc in Sources */,
+				8772CF4623989D8C00F6656E /* dns_config_watcher_mac.cc in Sources */,
+				0E6B436A22F049DD0050230B /* url_parse.cc in Sources */,
+				8772CFCA2398A3F700F6656E /* parse_number.cc in Sources */,
+				872C1FB622BB331E0009A59B /* message_pump_for_uv.cpp in Sources */,
+				8772CFC62398A3F700F6656E /* escape.cc in Sources */,
+				8772CFB32398A3F600F6656E /* proxy_config.cpp in Sources */,
+				872C1FA222BB331E0009A59B /* curl_network_session_manager_uv.cpp in Sources */,
+				8772CFA12398A3F600F6656E /* ip_endpoint.cc in Sources */,
+				8772CF4823989D8C00F6656E /* dns_config_service_posix.cc in Sources */,
+				8772CFAF2398A3F600F6656E /* net_errors.cpp in Sources */,
+				87415DB323990004009CD293 /* url_canon_stdstring.cc in Sources */,
+				872C1FB122BB331E0009A59B /* url_session_manager.cpp in Sources */,
+				0E6B436C22F049DD0050230B /* url_canon.cc in Sources */,
+				8772CF8D2398A3F500F6656E /* network_change_notifier.cc in Sources */,
+				872C1FA522BB331E0009A59B /* curl_http_request.cpp in Sources */,
+				8772CF942398A3F500F6656E /* address_list.cc in Sources */,
+				0EFBD97F22F4169600013C77 /* nim_net_util.cpp in Sources */,
+				8772CFC22398A3F700F6656E /* io_buffer.cpp in Sources */,
+				8772CFC42398A3F700F6656E /* address_family.cc in Sources */,
+				872C1FBE22BB331E0009A59B /* phoenix_api.cpp in Sources */,
+				8772CF9D2398A3F600F6656E /* net_util.cpp in Sources */,
+				872C1FB422BB331E0009A59B /* curl_network_session.cpp in Sources */,
+				8772CFD12398A3F700F6656E /* network_interfaces.cc in Sources */,
+				8772CFBE2398A3F700F6656E /* ip_address_number.cc in Sources */,
+				8772CF962398A3F500F6656E /* network_change_notifier_mac.cc in Sources */,
+				872C1FAD22BB331E0009A59B /* curl_http_request_base.cpp in Sources */,
+				872C1FC222BB331E0009A59B /* socket_wrapper.cpp in Sources */,
+				8772CF912398A3F500F6656E /* ip_address.cc in Sources */,
+				0EFBD98122F4169600013C77 /* nim_network_change_observer.cpp in Sources */,
+				8772CF4B23989D8C00F6656E /* dns_hosts.cc in Sources */,
+				872C1FC622BB331E0009A59B /* tcp_client_socket.cpp in Sources */,
+				87415DA32398F561009CD293 /* ip_pattern.cc in Sources */,
+				8772CFD52398A3F800F6656E /* network_config_watcher_mac.cc in Sources */,
+				87415D922398D2C7009CD293 /* network_interfaces_mac.cc in Sources */,
+				8772CF4F23989D8C00F6656E /* dns_config_service.cc in Sources */,
+				0E6B436522F049DD0050230B /* serial_worker.cc in Sources */,
+				87415DAC2398FC9C009CD293 /* url_canon_ip.cc in Sources */,
+				872C1FA722BB331E0009A59B /* url_session.cpp in Sources */,
+				8772CFBC2398A3F700F6656E /* network_interfaces_posix.cc in Sources */,
+				8772CF4D23989D8C00F6656E /* notify_watcher_mac.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		872C1F0522BB2C990009A59B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/\"",
+					"\"$(SRCROOT)/..\"",
+					"\"$(SRCROOT)/../build\"",
+					"\"$(SRCROOT)/../third_party/googletest/src/googletest/include\"",
+					"\"$(SRCROOT)/../third_party/libuv/include\"",
+					"\"$(SRCROOT)/../third_party/doubanguo/tinyNET/include\"",
+					"\"$(SRCROOT)/../third_party/doubanguo/tinySAK/include\"",
+					"\"$(SRCROOT)/../third_party/curl/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		872C1F0622BB2C990009A59B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/\"",
+					"\"$(SRCROOT)/..\"",
+					"\"$(SRCROOT)/../build\"",
+					"\"$(SRCROOT)/../third_party/googletest/src/googletest/include\"",
+					"\"$(SRCROOT)/../third_party/libuv/include\"",
+					"\"$(SRCROOT)/../third_party/doubanguo/tinyNET/include\"",
+					"\"$(SRCROOT)/../third_party/doubanguo/tinySAK/include\"",
+					"\"$(SRCROOT)/../third_party/curl/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+			};
+			name = Release;
+		};
+		872C1F4F22BB2DD80009A59B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = W9W2NC7XW4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/\"",
+					"\"$(SRCROOT)/..\"",
+					"\"$(SRCROOT)/../build\"",
+					"\"$(SRCROOT)/../third_party/googletest/src/googletest/include\"",
+					"\"$(SRCROOT)/../third_party/libuv/include\"",
+					"\"$(SRCROOT)/../third_party/doubanguo/tinyNET/include\"",
+					"\"$(SRCROOT)/../third_party/doubanguo/tinySAK/include\"",
+					"\"$(SRCROOT)/../third_party/curl/include\"",
+					"\"$(SRCROOT)/../third_party/openssl/include/iOS\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		872C1F5022BB2DD80009A59B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = W9W2NC7XW4;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/\"",
+					"\"$(SRCROOT)/..\"",
+					"\"$(SRCROOT)/../build\"",
+					"\"$(SRCROOT)/../third_party/googletest/src/googletest/include\"",
+					"\"$(SRCROOT)/../third_party/libuv/include\"",
+					"\"$(SRCROOT)/../third_party/doubanguo/tinyNET/include\"",
+					"\"$(SRCROOT)/../third_party/doubanguo/tinySAK/include\"",
+					"\"$(SRCROOT)/../third_party/curl/include\"",
+					"\"$(SRCROOT)/../third_party/openssl/include/iOS\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		872C1F5D22BB2DEB0009A59B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = W9W2NC7XW4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/\"",
+					"\"$(SRCROOT)/..\"",
+					"\"$(SRCROOT)/../build\"",
+					"\"$(SRCROOT)/../third_party/googletest/src/googletest/include\"",
+					"\"$(SRCROOT)/../third_party/libuv/include\"",
+					"\"$(SRCROOT)/../third_party/doubanguo/tinyNET/include\"",
+					"\"$(SRCROOT)/../third_party/doubanguo/tinySAK/include\"",
+					"\"$(SRCROOT)/../third_party/curl/include\"",
+					"\"$(SRCROOT)/../third_party/openssl/include/Mac\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		872C1F5E22BB2DEB0009A59B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = W9W2NC7XW4;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/\"",
+					"\"$(SRCROOT)/..\"",
+					"\"$(SRCROOT)/../build\"",
+					"\"$(SRCROOT)/../third_party/googletest/src/googletest/include\"",
+					"\"$(SRCROOT)/../third_party/libuv/include\"",
+					"\"$(SRCROOT)/../third_party/doubanguo/tinyNET/include\"",
+					"\"$(SRCROOT)/../third_party/doubanguo/tinySAK/include\"",
+					"\"$(SRCROOT)/../third_party/curl/include\"",
+					"\"$(SRCROOT)/../third_party/openssl/include/Mac\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		872C1F0422BB2C990009A59B /* Build configuration list for PBXProject "net" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				872C1F0522BB2C990009A59B /* Debug */,
+				872C1F0622BB2C990009A59B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		872C1F5122BB2DD80009A59B /* Build configuration list for PBXNativeTarget "net iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				872C1F4F22BB2DD80009A59B /* Debug */,
+				872C1F5022BB2DD80009A59B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		872C1F5C22BB2DEB0009A59B /* Build configuration list for PBXNativeTarget "net Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				872C1F5D22BB2DEB0009A59B /* Debug */,
+				872C1F5E22BB2DEB0009A59B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 872C1F0122BB2C990009A59B /* Project object */;
+}

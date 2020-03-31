@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\encrypt\url_encode.cpp" />
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\thread\framework_thread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\notification_center\notification_center.cpp">
+      <Filter>notification_center</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\notification_center\notification_source.cpp">
+      <Filter>notification_center</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\tools\tool.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\callback\post_task.cpp">
+      <Filter>callback</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\thread\thread_manager.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\device\platform_device_win.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\device\platform_device.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\strings\string_util.cpp">
+      <Filter>strings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\strings\string_number_conversions.cpp">
+      <Filter>strings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\file_util\path_util.cpp">
+      <Filter>file_util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\file_util\utf8_file_util.cpp">
+      <Filter>file_util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\file_util\path_util_win.cpp">
+      <Filter>file_util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\timer\timer.cpp">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\base\extension\at_exit_manager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\encrypt\url_encode.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\extension_export.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\macros.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\memory\file_deleter.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\nexeption\error.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\thread\thread_id.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\thread\framework_thread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\notification_center\notification_center.h">
+      <Filter>notification_center</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\notification_center\notification_source.h">
+      <Filter>notification_center</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\config\build_config.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\tools\tool.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\callback\post_task.h">
+      <Filter>callback</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\callback\bind_extension.h">
+      <Filter>callback</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\thread\thread_manager.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\object\neobject.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\callback\callback.h">
+      <Filter>callback</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\synchronization\lock.h">
+      <Filter>synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\device\platform_device_internal.h">
+      <Filter>device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\device\platform_device.h">
+      <Filter>device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\strings\string_util.h">
+      <Filter>strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\strings\string_number_conversions.h">
+      <Filter>strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\memory\packet.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\file_util\path_util.h">
+      <Filter>file_util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\file_util\utf8_file_util.h">
+      <Filter>file_util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\file_util\path_util_win.h">
+      <Filter>file_util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\strings\unicode.h">
+      <Filter>strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\memory\singleton.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\memory\blockbuffer.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\time\time.h">
+      <Filter>time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\timer\timer.h">
+      <Filter>timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\wrappers.h" />
+    <ClInclude Include="..\..\..\..\phoenix\base\extension\at_exit_manager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="thread">
+      <UniqueIdentifier>{b16fe2b3-7e87-4427-8c24-a61cac079797}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="memory">
+      <UniqueIdentifier>{a5d4d646-0459-403a-9e18-22d64f3dcb49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="notification_center">
+      <UniqueIdentifier>{52b0ec26-a4af-4356-b76c-5d544294d14a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{d0bd45d4-42ef-48d1-8755-175eb3f7f934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{f136226d-c2f5-46f8-bc96-adc4de9f4689}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="callback">
+      <UniqueIdentifier>{553666f7-c4af-4882-bbdb-31593dcceddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="synchronization">
+      <UniqueIdentifier>{b7423866-7dc2-4bd4-af58-5935b556e9c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="device">
+      <UniqueIdentifier>{ea5d1e90-1e86-4b5d-8d3b-2e516f3a50f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="strings">
+      <UniqueIdentifier>{c5f2c96d-e56c-492e-8e47-56ac985a5331}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="file_util">
+      <UniqueIdentifier>{7a5aea0c-d277-46d6-8b6b-9ca34b0bcaba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="time">
+      <UniqueIdentifier>{a9ced630-b5d0-4344-a0dd-498e3c5bc821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="timer">
+      <UniqueIdentifier>{5a16205d-da18-4f8e-955c-242ee0be8806}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="wrapper">
+      <UniqueIdentifier>{5a635668-2491-42ee-88d0-7c0d84e34d5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{feb880a6-fa97-4093-a749-7e1d868079ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="encrypt">
+      <UniqueIdentifier>{5b6ba840-07dc-4e03-a81c-802209dd326d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_encrypt\config\build_config.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_encrypt\encrypt\encrypt_impl.h">
+      <Filter>encrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_encrypt\encrypt_export.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_encrypt\wrapper\nim_encrypt.h">
+      <Filter>wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_encrypt\wrapper\nim_encrypt_interface.h">
+      <Filter>wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_encrypt\encrypt\rsa_encrypt_imp.h">
+      <Filter>encrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_encrypt\encrypt\sm2_encrypt_imp.h">
+      <Filter>encrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_encrypt\encrypt\symmetricEncryptImp_stream.h">
+      <Filter>encrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_encrypt\encrypt\symmetricEncryptImp_block.h">
+      <Filter>encrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_encrypt\encrypt\symmetricEncryptImp_hash.h">
+      <Filter>encrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\phoenix\comm\nim_encrypt\encrypt\encrypt_utli.h">
+      <Filter>encrypt</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_encrypt\encrypt\encrypt_impl.cpp">
+      <Filter>encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_encrypt\encrypt\sm2_encrypt_imp.cpp">
+      <Filter>encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_encrypt\encrypt\rsa_encrypt_imp.cpp">
+      <Filter>encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_encrypt\wrapper\nim_encrypt.cpp">
+      <Filter>wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_encrypt\encrypt\symmetricEncryptImp_stream.cpp">
+      <Filter>encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_encrypt\encrypt\symmetricEncryptImp_block.cpp">
+      <Filter>encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_encrypt\encrypt\symmetricEncryptImp_hash.cpp">
+      <Filter>encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\phoenix\comm\nim_encrypt\encrypt\encrypt_utli.cpp">
+      <Filter>encrypt</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
