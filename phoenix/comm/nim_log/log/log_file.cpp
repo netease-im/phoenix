@@ -25,7 +25,8 @@ bool LogFile::Init(const std::string& log_file_path)
 	{
 		mmap_file_ = std::make_unique<MMapFile>();
 		mmap_file_->AttachOverflowException(std::bind(&LogFile::OnMappingFileOverflow, this, std::placeholders::_1));
-		mmap_file_->Create(log_file_path_);
+		if (!mmap_file_->Create(log_file_path_))
+			return false;
 	}
 	if (!mmap_file_->IsInited())
 		mmap_file_->Init();

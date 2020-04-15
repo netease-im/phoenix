@@ -1,5 +1,6 @@
 #include "extension/config/build_config.h"
 #include "nim_log/log/log_file.h"
+#include "extension/file_util/utf8_file_util.h"
 
 NIMLOG_BEGIN_DECLS
 
@@ -28,6 +29,8 @@ bool LogFile::MMapFile::Create(const std::string& log_path)
 {
 	file_path_ = log_path;
 	file_path_.append(kMMapFileExt_);
+	if (!CheckMMapLogFile(file_path_, kMAX_LENGTH_))
+		return false;
 	file_handle_ = LogFile::OSFileSysUtil::CreateOSFile(file_path_, true);
 	if (file_handle_ == INVALID_LOG_FILE_HANDLE)
 		return false;
@@ -40,7 +43,33 @@ bool LogFile::MMapFile::Create(const std::string& log_path)
 		return false;
 	}
 }
+bool LogFile::MMapFile::CheckMMapLogFile(const std::string& mmap_file_path, int max_length)
+{
+	if (NS_EXTENSION::FilePathIsExist(mmap_file_path, false))
+	{
+		auto file_size = NS_EXTENSION::GetFileSize(mmap_file_path);
+		if (file_size != max_length)
+		{
+			std::string log_file_text;
 
+			NS_EXTENSION::ReadFileToString(mmap_file_path, log_file_text);
+			int text_length;
+			memcpy(&text_length, log_file_text.data(), sizeof(decltype(data_offset_)));
+			log_file_text = log_file_text.substr(sizeof(decltype(data_offset_)), text_length);
+			if (!log_file_text.empty())
+			{
+				std::string text("\r\n -----------------------load from mmap file begin-----------------------\r\n");
+				text.append(log_file_text);
+				text.append("\r\n -----------------------load from mmap file end-----------------------\r\n");
+				if(overflow_callback_ != nullptr)
+					overflow_callback_(text);
+			}
+			if (!NS_EXTENSION::DeleteFile(mmap_file_path))
+				return false;
+		}		
+	}
+	return true;
+}
 bool LogFile::MMapFile::Close()
 {
 	Flush();
@@ -122,6 +151,8 @@ bool LogFile::MMapFile::Reset()
 int LogFile::MMapFile::Write(const std::string& text)
 {
 	std::lock_guard<std::recursive_mutex> auto_lock(mutex_);
+	if (!inited_)
+		return 0;
 	int length = current_length_ + text.length() + sizeof(int);
 	if (length >= kMAX_LENGTH_)
 	{

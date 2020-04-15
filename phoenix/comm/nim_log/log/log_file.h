@@ -39,6 +39,7 @@ class NIMLOG_EXPORT LogFile
 		}
 	private:
 		int Read(std::string& data);
+		bool CheckMMapLogFile(const std::string& mmap_file_path,int max_length);
 	private:
 		const static int kMAX_LENGTH_;//最大的长度
 		const static std::string kMMapFileExt_;
